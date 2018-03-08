@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#top {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#top_h1 {
+	height: 165px;
+}
+
+#wire {
+	width: 800px;
+	height: 3px;
+	background: url(../image/d.jpg) repeat-x;
+}
+
+#top_r1 {
+	width: 800px;
+	height: 40px;
+	background: url(../image/top_red.jpg) repeat-x;
+}
+
+#top_r1_left {
+	width: 800px;
+	height: 40px;
+	background: url(../image/d_r3_c1.jpg) no-repeat;
+}
+
+#top_r1_right {
+	width: 800px;
+	height: 40px;
+	background: url(../image/d_r3_c25.jpg) no-repeat right;
+}
+
+#top_r1_right a:nth-child(1) {
+	margin-left: 100px;
+}
+
+#top_r1_right a {
+	margin-left: 15px;
+}

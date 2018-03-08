@@ -1,0 +1,49 @@
+/* 
+* @Author: anchen
+* @Date:   2017-11-30 11:04:18
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-12-01 09:00:09
+*/
+.big{
+    width: 1920px;
+    
+   
+
+}
+.center{
+    width:699px;
+    border:2px solid red;
+    margin-left: 267px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+   
+}
+.ly{
+    width:80px;
+    height: 30px;
+    background:black;
+    border-radius: 10px;
+    text-align: center;
+}
+.q{ 
+    
+     width:799px;
+     margin: 0 auto;
+}
+a:hover{
+    background:#ccc;
+}
+a{
+    color:blue;
+}
+.qqq{
+    width:1024px;
+    height:750px;
+    background-image: url(../images/3.jpg);
+    margin:0 auto;
+}
+body{
+	 background-image: url(../img/1/bookbg.gif);
+}

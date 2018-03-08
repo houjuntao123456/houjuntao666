@@ -1,0 +1,167 @@
+body,img{
+	margin: 0;
+	padding: 0;
+}
+.zhuti{
+	// background: #ccc;
+	width: 800px;
+	margin: 0px auto;
+}
+/*<!-- 头部 -->*/
+header{
+	width: 100%;
+	height:161px;
+}
+/*<!-- 上边栏 -->*/
+.shanglan{
+	width: 100%;
+	height: 42px;
+}
+.shanglan img{
+	float: left;
+}
+.shanglan a{
+	text-decoration: none;
+}
+
+/* <!-- 侧边栏 -->*/
+aside{
+	width: 170px;
+	height: 856px;
+	float: left;
+}
+.demo1{
+	 margin-top:-4px;
+}
+/*内容*/
+section{
+	width: 620px;
+	height: 645px;
+	float: left;
+}
+.imge{
+	width: 352px;
+	height: 270px;
+}
+.imge1{
+	width: 352px;
+}
+.imge1 img{
+	 margin-left: -8px;
+}
+.imge2 ul,.imge3 ul{
+	margin: 0;
+	padding: 0;
+}
+.imge2 ul li{
+	list-style: none;
+	height: 26px;
+	width: 350px;
+	border-bottom: 1px dashed red;
+}
+.imge2 ul li a span{
+	color: #ff0000;
+	font-family: "新宋体";
+	font-size: 13px;
+}
+.imge2 ul li a{
+	text-decoration: none;
+	color: black;
+	font-family: "新宋体";
+	font-size: 13px;
+}
+.imge2 ul li a:hover{
+	color: red;
+	text-decoration: underline;
+	font-family: "新宋体";
+	font-size: 13px;
+}
+.imge3 ul li{
+	list-style: none;
+}
+.imge,.imge3{
+	float: left;
+}
+.imge4{
+	width: 620px;
+	height: 262px;
+	float: left;
+
+}
+.imge4 img{
+	margin-left: -8px;
+}
+.imge4 ul {
+	margin: 0;
+	padding: 0;
+}
+.imge4 ul li{
+	list-style: none;
+}
+.imge4 ul li img{
+	padding-left: 14px;
+}
+.imge5{
+	float: left;
+	width: 620px;
+}
+.imge5 img{
+	margin-left: -8px;
+}
+.imge6 {
+	float: left;
+	// background: blue;
+	width: 620px;
+	height: 100px;
+}
+.imge6 ul li{
+	list-style: none;
+}
+.imge6 ul{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.imge6 .imge6_1 {
+	width: 285px;
+}
+.imge6 .imge6_1 li{
+	background: url(../image/d_r11_12_r1_c1.jpg) no-repeat -1px -5px;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+.imge6 .imge6_1 li span{
+	margin-left: 50px;
+}
+.imge6 .imge6_2{
+	width: 334px;
+}
+.imge6 .imge6_2 li img{
+	margin-left: 10px;
+}
+
+/*侧边栏*/
+#box{
+	width: 180px;
+	height: 600px;
+	float: right;
+	overflow: hidden;
+
+}
+#demo{
+	height: 1200px;
+	width: 180px;
+}
+#demo img{
+	width: 180px;
+	height: 107px;
+	float: left;
+}
+
+/*底部*/
+footer{
+	width: 100%;
+	height:29px;
+	background: url(../image/d_r11_15.jpg);
+	clear: left;
+}

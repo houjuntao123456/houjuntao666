@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+	<!-- 取消默认样式 -->
+body {
+	margin: 0px;
+}
+
+.f_l {
+	float: left;
+}
+
+.f_r {
+	float: right;
+}
+
+.clear_l {
+	clear: left;
+}
+
+.clear_r {
+	clear: right;
+}
+
+.clear_b {
+	clear: both;
+}
+
+ul {
+	list-style: none;
+}
+
+ul, ol {
+	margin: 0px;
+	padding: 0px;
+}
+
+dl, dt, dd {
+	margin-top: 0px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.f_l {
+	float: left;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.f_r {
+	float: right;
+	margin-right: 12px;
+}
+
+	<!--站内新闻左css -->
+#contery {
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+#chat {
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: 12px;
+}
+
+#back {
+	width: 776px;
+	height: 1px;
+	background-color: #ddd;
+	margin: 5px auto;
+}
+
+#contery_left {
+	width: 195px;
+	height: 400px;
+	background-color: rgb(244, 244, 244);
+	float: left;
+}
+
+#contery_left_b1 {
+	font-size: 14px;
+	font-family: "新宋体";
+}
+
+#contery_left_b1 li:nth-child(2) img {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+#contery_left_b1 li:nth-child(4) img {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+#contery_left_b1 li:nth-child(6) img {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+#contery_left_b2 a {
+	margin-left: 15px;
+}
+
+#contery_right {
+	width: 602px;
+	height: 400px;
+	float: left;
+}
+
+#contery_right_top {
+	width: 602px;
+	height: 50px;
+	background: url(../image/cg2.jpg);
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "新宋体";
+}
+
+#contery_right_chat {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#contery_right_chat .p1, .p2 {
+	font-size: 14px;
+	line-height: 25px;
+	font-family: "新宋体";
+}
+
+#contery_button {
+	width: 800px;
+	height: 30px;
+	background: url(../image/d_r11_15.jpg);
+}

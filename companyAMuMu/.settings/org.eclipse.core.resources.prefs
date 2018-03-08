@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//WebContent/denglu.jsp=UTF-8
+encoding//WebContent/showNewsList.jsp=UTF-8
+encoding//src/com/amumu/companyamumu/dao/BaseDAO.java=UTF-8
+encoding//src/com/amumu/companyamumu/dao/NewsDAO.java=UTF-8
+encoding//src/com/amumu/companyamumu/dao/NewsDaowlm.java=UTF-8
+encoding//src/com/amumu/companyamumu/dao/ProductDao.java=UTF-8
+encoding//src/com/amumu/companyamumu/dao/ProductDaowlm.java=UTF-8
+encoding//src/com/amumu/companyamumu/dao/RevertDao.java=UTF-8
+encoding//src/com/amumu/companyamumu/dao/messageBoardDAO.java=UTF-8
+encoding//src/com/amumu/companyamumu/servlet/IndexSewrvlet.java=UTF-8
+encoding//src/com/amumu/companyamumu/servlet/ProductListServlet.java=UTF-8
+encoding//src/com/amumu/companyamumu/servlet/Revert_r.java=UTF-8
+encoding//src/com/amumu/companyamumu/servlet/detailProductServlet.java=UTF-8
+encoding//src/com/amumu/companyamumu/servlet/message.java=UTF-8
+encoding//src/com/amumu/companyamumu/servlet/newmessage.java=UTF-8

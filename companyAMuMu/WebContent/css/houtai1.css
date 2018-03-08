@@ -1,0 +1,41 @@
+	#fir{
+		margin-left:200px;
+		margin-top:50px;
+	}
+	#fir td{
+		padding:20px 10px;
+	}
+	#td1{
+		width:100px;
+	}
+	#td2{
+		width:500px;
+	}
+    #manage_left{
+        width:90px;
+        margin-left:80px;
+        float:left;
+    }
+    #u1 li{
+        margin:10px 0;
+        font-size:12px;
+        margin-left:10px;
+    }
+    #u2 li{
+        margin:10px 0;
+        font-size:12px;
+        margin-left:10px;
+    }
+    #u3 li{
+        margin:10px 0;
+        font-size:12px;
+        margin-left:10px;
+    }
+    #line{
+        width:3px;
+        height:825px;
+        background-color:#000;
+        float:left;
+        margin-left:20px;
+    }
+   
