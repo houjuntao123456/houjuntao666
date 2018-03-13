@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang=zh-cn>
+<head>
+<title>重力感应球</title>
+<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+<META HTTP-EQUIV="expires" CONTENT="0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, target-densityDpi=device-dpi">
+<script type="text/javascript" charset="utf-8" src="foropera.js"></script>
+<script type="text/javascript">
+	function ss(){
+		var u = navigator.userAgent;
+
+		if ((!!u.match(/AppleWebKit.*Mobile.*/)) && (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1)) {
+			return;
+
+            }
+            else ((!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) && (u.indexOf('iPhone') > -1 || u.indexOf('iPad') > -1)) 
+            {
+                location.href='page4_1.html';
+            }
+
+	}
+</script>
+</head>
+<body style="margin-top:0px;margin-left:0px;" onload="ss();">
+<canvas id="ball" style="margin-top:0px;margin-left:0px;z-index:10;"></canvas>
+<img id="gunball" style="display:none" src="opera_ball.png"> 
+<script type="text/javascript">
+	
+	var cur_x = 0;
+	var cur_y = 0;
+
+	var ball_radius =450;//球的圆角
+	var initialized = false;//初始化
+
+	var ww;
+	var wh;
+
+	var speed_x = 0;//x方向的速度
+	var speed_y = 0;//y方向的速度
+
+	var accel_x;//x方向的加速度
+	var accel_y;//y方向的加速度
+
+	var friction_accel = 0.02;//摩擦加速度？
+
+	var interval = 30; //ms, 30 fps
+	var bg_color = "#EEEEEE";
+	var fg_color = "#333";
+
+	var absorbing_rate = 0.5;//吸收率？
+
+	var gunball=new Image();
+	gunball.src="opera_ball.png";
+	var opera_pix_bg=new Image();
+	opera_pix_bg.src="img/bg_page4.jpg";
+	
+	function inSameDirection(a, b)
+	{
+		return a > 0 && b > 0 || a <= 0 && b <= 0;
+	}//？？？？？？？？？
+
+	function getCurpos(cur_pos, speed, accel, boundary)
+	{
+		if (speed == 0 && Math.abs(accel) <= friction_accel)
+			return [cur_pos, speed];
+
+		start_speed = speed;
+		f_accel = (speed > 0 ? -friction_accel:friction_accel);
+		speed += accel + f_accel;
+	
+		if (!inSameDirection(f_accel, accel) &&       //friction and gravitional acceleration is not pointing to the same direction.摩擦和gravitional加速度没有指向相同的方向。
+                    !inSameDirection(f_accel, start_speed) && //friction and gravitional
+		    !inSameDirection(start_speed, speed))     //the direction of the speed changed.
+		{
+			//in this case friction should have stopped the ball.在这种情况下，摩擦应该已经停止球。
+			speed = 0;
+		} 
+
+		cur_pos += (start_speed + speed)/2;
+
+		//Clamp to the boundary of the window.夹紧到窗的边界。
+		//Also , reverse the speed when it hits the border.此外，扭转速度，当它击中了边境。
+		if (cur_pos > boundary - ball_radius)
+		{
+			cur_pos= boundary - ball_radius;
+			speed = -speed * absorbing_rate;
+		}
+		else if (cur_pos < 0)
+		{
+			cur_pos = 0;
+			speed = -speed * absorbing_rate;
+		}
+
+		return [cur_pos, speed];
+	}
+
+
+	function physics()
+	{
+		var x = getCurpos(cur_x, speed_x, accel_x, ww);
+		cur_x = x[0]; speed_x = x[1];
+//		alert("x"+cur_x);
+		var y = getCurpos(cur_y, speed_y, accel_y, wh);
+		cur_y = y[0]; speed_y = y[1];
+//	alert("y"+cur_y);336.66058513347666
+		if(cur_x>260 && cur_x<271 && cur_y>640 && cur_y<650) {
+			//ctx.stroke();
+			location.href='page5.html';
+		}
+		
+		}
+	
+
+	function paint()
+	{
+		var ball_canvas = document.getElementById('ball');
+  		var ctx = ball_canvas.getContext('2d');
+
+		
+		physics(); 
+		
+  		ctx.drawImage(opera_pix_bg, 0,0, ww, wh );
+		ctx.drawImage(gunball, cur_x,cur_y, 400, 500 );
+
+		setTimeout("paint()", interval);
+	}
+
+	function clearCanvas()
+	{
+		var ball_canvas = document.getElementById('ball');
+  		var ctx = ball_canvas.getContext('2d');
+
+	}
+
+	function update(evt)
+	{
+		var ball_canvas = document.getElementById('ball');
+		if (ball_canvas.width != window.outerWidth ||
+		    ball_canvas.height != window.outerHeight)
+		{
+			ball_canvas.width = window.outerWidth;
+			ball_canvas.height = window.outerHeight;
+			clearCanvas();
+		}
+  
+  		ww = ball_canvas.width;
+  		wh = ball_canvas.height;
+
+		//calculate the acceleration from gravity.
+		accel_x =  Math.sin(evt.gamma / 180 * Math.PI);
+		accel_y =  Math.sin(evt.beta  / 180 * Math.PI); 
+		//alert(accel_y);
+
+		if (!initialized)
+		{
+			cur_x = ww /2 + ball_radius;
+			cur_y = wh /2 + ball_radius;
+			initialized = true;
+			clearCanvas();
+			paint();
+		}
+	}
+	
+	function preload(){
+		var ball_canvas = document.getElementById('ball');
+		if (ball_canvas.width != window.outerWidth ||
+		    ball_canvas.height != window.outerHeight)
+		{
+			ball_canvas.width = window.outerWidth;
+			ball_canvas.height = window.outerHeight;
+			
+		}
+  
+  		ww = ball_canvas.width;
+  		wh = ball_canvas.height;
+		paint();
+		
+ 	}
+	preload();
+	window.addEventListener('deviceorientation', update, true);
+	</script>
+</body>

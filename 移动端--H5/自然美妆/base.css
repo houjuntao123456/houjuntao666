@@ -1,0 +1,133 @@
+/************reset.css by rol.xyz****************/
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;border: none;font: "微软雅黑";}   
+ol,ul{margin:0; padding:0;}
+img{border: none;}
+a{color: #000;text-decoration: none;cursor: pointer;outline: 0}
+a:hover{text-decoration: none;color: #000;}
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.clearfix{zoom:1;}
+button{outline: none;}
+/************reset.css by rol.xyz***end*************/
+
+#click{
+	position: absolute;
+	left: 15px;
+	bottom: 40px;
+	width: 200px;
+	height: 120px;
+	/*background: #3072B3;*/
+	z-index: 10;
+	
+}
+/**********************index end**********************/
+#click2{
+	position: absolute;
+	left:270px;
+	top:10px;
+	width: 40px;
+	height: 40px;
+	/*background: #00FF00;*/
+	z-index: 10;
+}
+/**********************page2 end**********************/
+#click3{
+	position: absolute;
+	left:50px;
+	top: 320px;
+	width: 250px;
+	
+	height: 100px;
+	/*background: #00FF00;*/
+	z-index: 10;
+}
+/**********************page3 end**********************/
+#box{
+	color: #009a46;
+	position: absolute;
+	left:45px;
+	top: 200px;
+	width: 230px;
+	height: 280px;
+	/*background: #0000FF;*/
+	text-align: center;
+	
+}
+#box #mobile{
+	color: #009a46;
+	margin-top: 10px;
+	font-size: 1em;
+	padding: 5px;
+	width: 180px;
+	height: 25px;
+	border:#009a46 dashed 1px;
+	background: url(img/tmbg.png) repeat;
+	outline: none;
+}
+#box #button_1{
+	border: none;
+	margin-top: 10px;
+	font-size: 1em;
+	color: #FFFFFF;
+	width: 80px;
+	height: 30px;
+	background: #646361;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+#box h3{
+	
+	color: #009944;
+	margin: 0 auto;
+	width: 80%;
+	text-align: left;
+	font-size: 1em;
+	font-weight: 600;
+	
+}
+#box #button_2,#box #button_3{
+	border: none;
+	margin-top: 10px;
+	font-size: 1em;
+	color: #FFFFFF;
+	width: 100px;
+	height: 35px;
+	background: #646361;
+	border-radius: 10px;
+}
+#sharewb{
+	
+	display: none;
+	width: 300px;
+	height: 305px;
+	background: url(img/bg_share.jpg) no-repeat;
+	background-size: 300px 305px;
+	position: absolute;
+	left:-34px;
+	top: -120px;
+	border-radius: 10px;
+	text-align:center;
+	line-height:470px;
+}
+#sharewb [onclick="_smq.push(['custom', '蛋白质粉', '分享', '腾讯微博']);txwb()"]{
+	width:100px;
+	height: 38px;
+	background: url(img/txwb.png) no-repeat;
+	background-size: 100px 38px;
+	border: none;
+}
+#sharewb [onclick="_smq.push(['custom', '蛋白质粉', '分享', '新浪微博']);wb()"]{
+	width:100px;
+	height: 38px;
+	background: url(img/wb.png) no-repeat;
+	background-size: 100px 38px;
+	border: none;
+}
+/**********************jiangpin end**********************/
+

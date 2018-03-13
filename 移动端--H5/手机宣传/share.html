@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>小鲜手机</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript">
+        // var sUserAgent = navigator.userAgent.toLowerCase();
+        // var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        // if(bIsCE)
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            var ofigure = document.getElementById('bg_share');
+            var ocontainer1 = document.getElementById('container1');
+            //document.writeln("您的浏览设备为：");
+            if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
+                window.location.href = "shareweb.html";
+            }
+        }
+        // function a(){
+        //   try {
+        //     //    var _d = new Date();
+        //       //  var url = this._amaurl + "?prgid=";
+        //        // url += a + "&callback=adwojs.ut.run_cmscallback&cmsp=" + b + "&d=" + _d.getTime();
+        //         this._ts = document.createElement("script");
+        //         this._ts.type = "text/javascript";
+        //         this._ts.src = "js/common.js";
+        //         document.getElementsByTagName("head")[0].appendChild(this._ts);
+        //     }
+        //     catch (e) { }
+
+        // }
+        browserRedirect();
+    </script>
+</head>
+<body>
+    <div id="container1" class="container  " style="margin:0 auto;">
+        <figure><img id="bg_share" src="images/share.jpg" alt="" style="" /></figure>
+        <div class="pop">
+            <a class="sharePage" href=""></a>
+            <a class="www" href="http://www.189.cn/products/0136132166.html"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>小鲜手机</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/trackEvent.js"></script>
+    <script type="text/javascript">
+        var n = 1, startX = 0, startY = 0;
+        $(function () {
+            if (window.location.search == "?5") {
+                $("#a1").hide();
+                $("#a5").show();
+            } else {
+                $(".kuang").show(1000);
+                setTimeout("$('.kuang').css({width:'75px',height:'75px'})", 1600);
+                setTimeout("$('.photo02').show()", 1900);
+                setTimeout("$('.kuang').css({width:'65px',height:'65px'})", 2000);
+                setTimeout("$('.photo01').show().next().hide()", 2000);
+                // setTimeout("$('.photo02').hide()",1000);
+                //$(".photo01").delay(200).fadeIn(1800);
+                setTimeout("$('.pop01').show()", 2100);
+                setTimeout("$('.pop02').show()", 2100);
+                var i = 0;
+                function arrow() {
+                    if (i > 2) i = 0;
+                    if (i == 0) {
+                        $(".slider_btn").animate({ bottom: '15px' }, 500);
+                    }
+                    else if (i == 1) {
+                        $(".slider_btn").animate({ bottom: '20px' }, 500);
+                    }
+                    else if (i == 2) {
+                        $(".slider_btn").animate({ bottom: '25px' }, 800);
+                    }
+                    i++;
+                }
+                setInterval(arrow, 500);
+                //$("#a1").bind("click", function () {
+                //    $(this).slideUp(1000);
+                //    $("#a2").show();
+                //    n++;
+                //    if (n == 2) {
+                //        //alert(n);
+                //        setTimeout("$('.photobg').show()", 600);
+                //        setTimeout("$('.t03').show().prev().hide()", 700);
+                //        setTimeout("$('.t03').animate({width:107,height:279,left:180,top:193},1500)", 800);
+                //        //  setTimeout("$('.photo04').animate({width:84,height:220,left:200,top:193},1500)",800);
+                //        setTimeout("$('.t02').animate({width:34,height:180,right:0,top:254,opacity:'hide'},1500)", 800);
+                //        setTimeout("$('.intro01').animate({left:12},1500)", 2000);
+                //        setTimeout("$('.word6').animate({left:15},800)", 3500);
+
+                //    }
+                //})
+                //$("#a2").bind("click", function () {
+                //    $(this).slideUp(1000);
+                //    $("#a3").show();
+                //    n++;
+                //    if (n == 3) {
+                //        //alert(n);
+                //        $(".intro02").animate({ left: 0, opacity: 'show' }, 2000);
+                //        setTimeout("$('.side').fadeIn(500)", 3000);
+                //        setTimeout("$('.word5').fadeIn(1000).prev().hide()", 5000);
+                //    }
+                //})
+                //$("#a3").bind("click", function () {
+                //    console.log(n);
+                //    $(this).slideUp(1000);
+                //    $("#a4").show();
+                //    n++;
+                //    if (n == 4) {
+                //        //alert(n);
+                //        $(".p01").animate({
+                //            right: 45, opacity: 'show'
+                //        }, 2000);
+                //        $(".p02").animate({
+                //            left: 75, opacity: 'show'
+                //        }, 3500);
+                //        $(".p03").animate({
+                //            right: 25, opacity: 'show'
+                //        }, 3000);
+                //        $(".p04").animate({
+                //            left: 63, opacity: 'show'
+                //        }, 2000);
+                //        setTimeout("$('.telbg02').fadeIn().prev().fadeOut()", 3800);
+                //        setTimeout("$('.tel02').show().prev().hide()", 3800);
+                //        setTimeout("$('.word2').show()", 3800);
+                //        setTimeout("$('.p').hide()", 3800);
+                //    }
+                //})
+                //$("#a4").bind("click", function () {
+                //    console.log(n);
+                //    $(this).slideUp(1000);
+                //    $("#a5").show();
+                //})
+            }
+        });
+
+        function touchSatrtFunc(evt) {
+            if (window.location.search != "?5") {
+                //event.preventDefault();
+                try {
+                    var touch = evt.touches[0];
+                    var x = Number(touch.pageX);
+                    var y = Number(touch.pageY);
+                    startX = x;
+                    startY = y;
+                }
+                catch (e) { }
+            }
+        }
+
+        function touchMoveFunc(evt) {
+            if (window.location.search != "?5") {
+                event.preventDefault();
+                try {
+                    var touch = evt.touches[0];
+                    var x = Number(touch.pageX);
+                    var y = Number(touch.pageY);
+                    if (startY - y > 0) {
+                        switch (n) {
+                            case 1:
+                                $("#a1").slideUp(1000);
+                                $("#a2").show();
+                                setTimeout("$('.photobg').show()", 600);
+                                setTimeout("$('.t03').show().prev().hide()", 700);
+                                setTimeout("$('.t03').animate({width:107,height:279,left:180,top:193},1500)", 800);
+                                //  setTimeout("$('.photo04').animate({width:84,height:220,left:200,top:193},1500)",800);
+                                setTimeout("$('.t02').animate({width:34,height:180,right:0,top:254,opacity:'hide'},1500)", 800);
+                                setTimeout("$('.intro01').animate({left:12},1500)", 2000);
+                                setTimeout("$('.word6').animate({left:40},800)", 3500);
+                                break;
+                            case 2:
+                                $("#a2").slideUp(1000);
+                                $("#a3").show();
+                                $(".intro02").animate({ left: 0, opacity: 'show' }, 2000);
+                                setTimeout("$('.side').fadeIn(500)", 3000);
+                                setTimeout("$('.word5').fadeIn(1000).prev().hide()", 5000);
+                                break;
+                            case 3:
+                                $("#a3").slideUp(1000);
+                                $("#a4").show();
+                                $(".p01").animate({
+                                    right: 45, opacity: 'show'
+                                }, 2000);
+                                $(".p02").animate({
+                                    left: 75, opacity: 'show'
+                                }, 3500);
+                                $(".p03").animate({
+                                    right: 25, opacity: 'show'
+                                }, 3000);
+                                $(".p04").animate({
+                                    left: 63, opacity: 'show'
+                                }, 2000);
+                                setTimeout("$('.telbg02').fadeIn().prev().fadeOut()", 3800);
+                                setTimeout("$('.tel02').show().prev().hide()", 3800);
+                                setTimeout("$('.word2').show()", 3800);
+                                setTimeout("$('.p').hide()", 3800);
+                                break;
+                            case 4:
+                                $("#a4").slideUp(1000);
+                                $("#a5").show();
+                                break;
+                        }
+                    }
+                }
+                catch (e) { }
+            }
+        }
+
+        function touchEndFunc(evt) {
+            if (window.location.search != "?5") {
+                //event.preventDefault();
+                try {
+                    n++;
+                }
+                catch (e) { }
+            }
+        }
+        function isTouchDevice() {
+            try {
+                document.createEvent("TouchEvent");
+                document.addEventListener('touchstart', touchSatrtFunc, false);
+                document.addEventListener('touchmove', touchMoveFunc, false);
+                document.addEventListener('touchend', touchEndFunc, false);
+            }
+            catch (e) { }
+        }
+        window.onload = isTouchDevice;
+
+        var imgUrl = 'http://xiaoxian.moxz.cn/images/weixin.png';
+        var descContent = '小鲜手机,鲜享一切,极致视觉,自拍神器,小鲜肉们快来抢吧！';
+        var shareTitle = '小鲜手机,鲜享一切,极致视觉,自拍神器,小鲜肉们快来抢吧！';
+        var lineLink = 'http://static.adwo.com/ad/201410/xiaoxian/index.html';
+
+        var appid = '';
+
+        function shareFriend() {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "appid": appid,
+                "img_url": imgUrl,
+                "img_width": "200",
+                "img_height": "200",
+                "link": lineLink,
+                "desc": descContent,
+                "title": shareTitle
+            }, function (res) {
+                //_report('send_msg', res.err_msg);
+            })
+        }
+        function shareTimeline() {
+            WeixinJSBridge.invoke('shareTimeline', {
+                "img_url": imgUrl,
+                "img_width": "200",
+                "img_height": "200",
+                "link": lineLink,
+                "desc": descContent,
+                "title": shareTitle
+            }, function (res) {
+                //_report('timeline', res.err_msg);
+            });
+        }
+        function shareWeibo() {
+            WeixinJSBridge.invoke('shareWeibo', {
+                "content": descContent,
+                "url": lineLink,
+            }, function (res) {
+                //_report('weibo', res.err_msg);
+            });
+        }
+        // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+            // 发送给好友
+            WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+                shareFriend();
+            });
+            // 分享到朋友圈
+            WeixinJSBridge.on('menu:share:timeline', function (argv) {
+                shareTimeline();
+            });
+            // 分享到微博
+            WeixinJSBridge.on('menu:share:weibo', function (argv) {
+                shareWeibo();
+            });
+        }, false);
+    </script>
+</head>
+<body>
+    <div id="a1">
+        <!-- <img src="images/bg03.jpg" />1 -->
+        <div class="container ">
+            <figure><img src="images/bg01.jpg" alt="" /></figure>
+            <div class="slider_btn"><img src="images/slider_btn.png" alt=""></div>
+            <div class="pop">
+                <img class="indextel01" src="images/indextel01.png" alt="">
+                <img class="photo01" src="images/photo01.png" alt="">
+                <img class="photo02" src="images/photo02.png" alt="">
+                <img class="pop01" src="images/pop2.png" alt="">
+                <img class="pop02" src="images/pop01.png" alt="">
+                <img id="test" class="kuang" src="images/kuang.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="a2" style="display:none">
+        <!-- <img src="images/bg01.jpg" /> -->
+        <div class="container ">
+            <figure><img src="images/bg04.jpg" alt="" /></figure>
+            <div class="slider_btn"><img src="images/slider_btn.png" alt=""></div>
+            <div class="pop">
+                <img class="t01" src="images/t01.png" alt="">
+                <img class="t03" src="images/t03.png" alt="">
+                <img class="t02" src="images/t02.png" alt="">
+                <img class="photobg" src="images/photobg.png" alt="">
+                <img class="t03" src="images/t03.png" alt="">
+                <img class="intro01" src="images/intro01.png" alt="">
+                <img class="word6" src="images/word6.gif" alt="">
+
+            </div>
+        </div>
+    </div>
+    <div id="a3" style="display:none">
+        <div class="container ">
+            <figure><img src="images/bg04.jpg" alt="" /></figure>
+            <div class="slider_btn"><img src="images/slider_btn.png" alt=""></div>
+            <div class="pop">
+                <img class="intro02" src="images/intro02.png" alt="">
+                <img class="side" src="images/side2.gif" alt="">
+                <img class="word5" src="images/word5.png" alt="">
+            </div>
+        </div>
+        <!-- <img src="images/bg01.jpg" /> -->
+    </div>
+    <div id="a4" style="display:none">
+        <div class="container ">
+            <figure><img src="images/bg04.jpg" alt="" /></figure>
+            <div class="slider_btn"><img src="images/slider_btn.png" alt=""></div>
+            <div class="pop">
+                <img class="p01 p" src="images/01.png" alt="">
+                <img class="p02 p" src="images/02.png" alt="">
+                <img class="p03 p" src="images/03.png" alt="">
+                <img class="p04 p" src="images/04.png" alt="">
+                <img class="tel01" src="images/tele01.png" alt="">
+                <img class="tel02" src="images/tel02.png" alt="">
+                <img class="word" src="images/word.png" alt="">
+                <img class="word2" src="images/word2.png" alt="">
+                <img class="telbg01" src="images/telbg01.png" alt="">
+                <img class="telbg02" src="images/telbg02.png" alt="">
+            </div>
+        </div>
+        <!-- <img src="images/bg03.jpg" /> -->
+    </div>
+    <div id="a5" style="display:none">
+        <div class="container ">
+            <figure><img src="images/xiaoxian_bg.jpg" alt="" /></figure>
+            <a class="sina" href="javascript:;" onclick="move1()"></a>
+            <a class="tencent" id="qq" href="###"></a>
+        </div>
+        <!-- <img src="images/bg03.jpg" /> -->
+    </div>
+
+    <script type="text/javascript">
+        var num = Math.floor(Math.random() * 2);
+        var urls='http://static.adwo.com/ad/201410/xiaoxian/share.html';
+        var s = new Array();
+        s[0] = "你是我的小呀小鲜肉，怎么爱你都不嫌多，清新的外观坚硬的外壳，都藏不住内芯的火~火火火火火~天翼小鲜，超强核“芯”，极致视觉，现在只要分享就有机会获得一部小鲜，“鲜”来“鲜”得！";
+        s[1] = "不需要四十五度角仰望星空，也不需要保持焦距背拍高分，不需要陈老师的犀利技术，也不需要能捕捉闪电的男盆友，你只需要一部“小鲜”手机，如此这般自拍神器，带你飞~带你醉~赶快参与本次活动，即有机会拥有这等神器！";
+        var innerShareText = encodeURIComponent(s[num]) + urls; 
+        function move1() {
+            var url = "http://ama.adwo.com/callback/sinacallback?content=" + innerShareText + "&k=xxsj_root_sina&ad=xxsj";
+            setTimeout(function () {
+                window.location.href = url;
+            }, 500);
+        }
+        $('#qq').click(function (event) {
+            var url = "http://ama.adwo.com/callback/qqcallback?content=" + innerShareText + "&k=xxsj_root_qq&ad=xxsj";
+            setTimeout(function () {
+                window.location.href = url;
+            }, 500);
+            event.stopPropagation();  //不在派发时间
+        });
+    </script>
+</body>
+</html>

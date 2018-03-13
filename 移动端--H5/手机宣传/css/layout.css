@@ -1,0 +1,65 @@
+/*index css*/
+body{background: #fff;}
+.container{min-width:320px; min-height: 480px; margin:0 auto; position: relative; -webkit-text-size-adjust:none; position: relative;overflow: hidden;} /*}*/
+figure img{width:100%;display:block;}
+
+.sina{width: 82px; height: 30px; position: absolute; top: 53%; left: 8%;}
+.tencent{width: 82px; height: 30px; position: absolute; top: 53%; left: 35%;}
+.sharePage{width: 88px; height: 35px; position: absolute; bottom: 11%; left: 66%; }
+.www{width: 234px; height: 35px; position: absolute;bottom: 2%; left: 2%; }
+
+
+
+.slider_btn{position: absolute; bottom: 20px; left: 45%; }
+.slider_btn img{width:40px; height:20px;}
+.indextel01{ position: absolute; bottom: 0px; left:0px; width:320px; height: 226px; }
+.photo01{ position: absolute; bottom: 65px; left:82px; width:185px; height: 110px; display: none;}
+.photo02{ position: absolute; bottom: 65px; left:82px; width:185px; height: 110px; display: none; }
+.pop01{ position: absolute; bottom: 75px; left: 90px; width: 69px; height: 16px; z-index: 2;display: none;}
+.pop02{ position: absolute; bottom: 153px; left: 190px; width:69px; height: 16px;z-index: 2;display: none;}
+.kuang{ position: absolute; bottom: 86px; left: 132px; width: 84px; height: 84px; z-index: 1;display: none;}
+
+/*.p01{ position: absolute; bottom: 165px; right:0px; width: 65px; height: 65px; z-index: 2;}
+.p02{ position: absolute; bottom:20%; left: 0px; width: 73px; height: 73px;z-index: 2;}
+.p03{ position: absolute; top: 90px; right: 0px; width: 85px; height: 85px;z-index: 2; }
+.p04{ position: absolute; top: 110px; left: 0px; width: 56px; height: 56px; z-index: 2;}*/
+
+.p01{ position: absolute; bottom: 165px; right: -65px; width: 65px; height: 65px; z-index: 2;display: none;}
+.p02{ position: absolute; bottom: 92px; left: -73px; width: 73px; height: 73px;z-index: 2; display: none;}
+.p03{ position: absolute; top: 90px; right: -85px; width: 85px; height: 85px;z-index: 2; display: none;}
+.p04{ position: absolute; top: 110px; left: -56px; width: 56px; height: 56px; z-index: 2;display: none;}
+.tel01,.tel02{ position: absolute; top: 140px; left: 33%; width: 124px; height: 240px;z-index: 1; }
+.tel02{display: none;}
+.word{ position: absolute; bottom: 220px; left: 40px; width: 94px; height: 52px; z-index:2;}
+.word2{ position: absolute; top: 106px; left: 34%; width: 115px; height: 23px; z-index:3; display: none;}
+.telbg01{ position: absolute; bottom: 38%; left: 8%; width: 263px; height: 155px; z-index:0;}
+.telbg02{ position: absolute; bottom: 38%; left: 8%; width: 305px; height: 180px; z-index:0; display: none;}
+
+.t01,.t03{ position: absolute; top: 105px; left: 55px; width: 133px; height: 346px; z-index:1;}
+.t03{ display: none;}
+.t02{ position: absolute; top: 128px; right: 30px; width: 193px; height: 274px; z-index:0; }
+.photobg,.photo04{position: absolute; top: 137px; left: 62px; width: 108px; height: 254px; z-index:2; display: none;}
+.intro01{position: absolute; top: 97px; left: -270px; width: 263px; height: 155px; z-index:0; }
+.word6{position: absolute; top: 122px; left: -230px; width: 230px; height: 131px; z-index:2; }
+.word4{position: absolute; top: 97px; left: 29px; width: 230px; height: 121px; z-index:2; display: none; }
+
+.intro02{position: absolute; top: 136px; left: -290px; width: 290px; height: 356px;z-index:1;display: none; }
+.word5{position: absolute; bottom: 124px; left: 57px; width: 223px; height: 121px; z-index:2; display: none;}
+.side{position: absolute; top: 161px; left: 153px; width: 146px; height: 266px; z-index:1; display: none; }
+
+.close_j{
+    width: 33px;
+    height: 32px;
+    position: absolute;
+    left: 144px;
+    bottom: 104px;
+    display: block;
+}
+.back{
+    width:86px;
+    height: 35px;
+    position: absolute;
+    left: 37%;
+    bottom: 34%;
+    display: block;
+}

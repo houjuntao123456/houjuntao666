@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+var _smq = _smq || [];
+_smq.push(['_setAccount', 'fd5c18', new Date()]);
+_smq.push(['pageview']);
+
+(function() {
+var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/collect.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+})();
+</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+		<meta charset="utf-8">
+		<title>自然之宝</title>
+		<link rel="stylesheet" type="text/css" href="base.css"/>
+		<script src="zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="share.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			/*html,body{
+	position: relative;
+	}*/
+#bgj{width: 320px;z-index: -1;}
+		</style>
+		
+	</head>
+	<body onload="resetPage()">
+		<div id="click2" onclick="location.href='index.html'"></div>
+		<img id="bgj" src="img/jiangpin.jpg" onclick="displayHide()"/>
+		<div id="box">
+			<img src="img/j2.jpg"  />
+			<input id="mobile" type="text" placeholder="请填写手机号码：" />
+			<p style="100px;font-size:12px">请留下您的联系方式，以便和您确认<br />领奖信息哦！</p>
+			<input id="button_1" onclick="if(isphone()){_smq.push(['custom', '蛋白质粉', '二等奖', '提交']);submit1()}" type="button" value="提交"/>
+			<div id="sharewb">
+			<input onclick="_smq.push(['custom', '蛋白质粉', '分享', '腾讯微博']);txwb()" type="button" />
+			<input onclick="_smq.push(['custom', '蛋白质粉', '分享', '新浪微博']);wb()" type="button" />
+			</div>
+			<h3>分享</h3>
+			<input  id="button_2" onclick="_smq.push(['custom', '蛋白质粉', '二等奖', '一键分享']);displayShow();" type="button" value="一键分享"/>
+			<input onclick="_smq.push(['custom', '蛋白质粉', '二等奖', '进入天猫']);location.href='http://nuotianyuan.tmall.com/campaign.htm'" id="button_3" type="button" value="进入天猫"/>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript">
+			if(!getQueryString("s")){alert('请通过夹鸡蛋游戏来访问本页');location.href='page4.html'}
+		</script>
+</html>

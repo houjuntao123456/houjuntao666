@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title>优车城品</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/swipte.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/js1.js"></script>
+    <script src="js/js2.js"></script>
+    <script src="js/trackEvent.js"></script>
+    <script>var channel = '20'</script>
+</head>
+<body>
+    <div class="youche">
+        <div id="swipte" class="swipte">
+            <ul id="swipte_main" class="swipte_main">
+                <li class="index1">
+                    <img src="images/y1.jpg" alt="优车诚品">
+                    <div id="nav1" class="nav">
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                    </div>
+                    <a class="tel telp" href="javascript:;"></a>
+                </li>
+                <li class="index2">
+                    <div id="nav2" class="nav">
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                    </div>
+                    <div class="fill1" style="">
+                        <div class="hot">
+                            <div class="swipte2" id="swipte2">
+                                <ul class="swipte2_main" id="swipte2_main">
+                                    <!-- <li class="hot1">
+                                        <h2>凯美瑞 11款 200G 经典周年纪念版</h2>
+                                        <img src="images/img1.jpg" alt="">
+                                        <p>￥<strong>12.95</strong>万</p>
+                                        <span>新车价:<i>21.04(含税)</i></span>
+                                        <span>为您节省:<var>6.43</var>万元</span>
+                                    </li>
+                                    <li class="hot2">
+                                        <h2>凯美瑞 11款 200G 经典周年纪念版</h2>
+                                        <img src="images/img1.jpg" alt="">
+                                        <p>￥<strong>12.95</strong>万</p>
+                                        <span>新车价:<i>21.04(含税)</i></span>
+                                        <span>为您节省:<var>6.43</var>万元</span>
+                                    </li>
+                                    <li class="hot3">
+                                        <h2>凯美瑞 11款 200G 经典周年纪念版</h2>
+                                        <img src="images/img1.jpg" alt="">
+                                        <p>￥<strong>12.95</strong>万</p>
+                                        <span>新车价:<i>21.04(含税)</i></span>
+                                        <span>为您节省:<var>6.43</var>万元</span>
+                                    </li>
+                                    <li class="hot4">
+                                        <h2>凯美瑞 11款 200G 经典周年纪念版</h2>
+                                        <img src="images/img1.jpg" alt="">
+                                        <p>￥<strong>12.95</strong>万</p>
+                                        <span>新车价:<i>21.04(含税)</i></span>
+                                        <span>为您节省:<var>6.43</var>万元</span>
+                                    </li>
+                                    <li class="hot5">
+                                        <h2>凯美瑞 11款 200G 经典周年纪念版</h2>
+                                        <img src="images/img1.jpg" alt="">
+                                        <p>￥<strong>12.95</strong>万</p>
+                                        <span>新车价:<i>21.04(含税)</i></span><br/>
+                                        <span>为您节省:<var>6.43</var>万元</span>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pointcon">
+                            <ul id='mypoint' class="point clearfix">
+                              <li class='on'></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                        </div>
+                        <div class="form">
+                            <select name="" id="sele1" onchange="p_change();">
+                                <option value="">选择品牌</option>
+                            </select>
+                            <select name="" id="sele2">
+                                <option value="">选择车型</option>
+                            </select><br/>
+                            <select name="" id="mileage">
+                                <option value="">行驶里程</option>
+                                <option value="0">不限制</option>
+                                <option value="1">1万以内</option>
+                                <option value="2">1-3万</option>
+                                <option value="3">3-6万</option>
+                                <option value="4">6-10万</option>
+                                <option value="5">10万以上</option>
+                            </select>
+                            <select name="" id="carage">
+                                <option value="">车龄</option>
+                                <option value="0">不限制</option>
+                                <option value="1">1年以内</option>
+                                <option value="2">2年以内</option>
+                                <option value="3">3年以内</option>
+                                <option value="4">3-5年</option>
+                                <option value="5">5-8年</option>
+                                <option value="6">8年以上</option> 
+                            </select>
+                        </div>
+                        <a class="made" id="made" href="javascript:;"></a>
+                    </div>
+                    <img src="images/y2_bg.jpg" alt="优车诚品">
+                    <!-- 结果列表 -->
+                    <div class="result_list" style="">
+                        <h5>
+                            <!-- <a class="search_list" href="">&nbsp;</a> -->
+                            <a class="re_search" href="javascript:;">&nbsp;</a>
+                        </h5>
+                        <div class="data_scroll">
+                            <div class="data_list" id="data_list">
+                            <a id="more_list" class="more_list" href="javascript:">加载更多</a>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="list">
+                            <h2>凯美瑞 11款 200G 经典周年纪念版</h2>
+                            <img src="images/list1.jpg" alt="">
+                            <h3>￥<strong>12.95</strong>万</h3>
+                            <dl>
+                                <dd>
+                                    <span>里程</span><br/>
+                                    <em><i>7.85</i>万公里</em>
+                                </dd>
+                                <dd>
+                                    <span>排放标准</span><br/>
+                                    <em>国4</em>
+                                </dd>
+                                <dd class="last_dd">
+                                    <span>变速箱</span><br/>
+                                    <em>自动</em>
+                                </dd>
+                            </dl>
+                        </div> -->
+                    </div>
+                    <!-- 列表详细 -->
+                    <div class="result_detail" style="">
+                        <div class="re_detail">
+                            <img src="images/index2_bg2.jpg" alt="">
+
+                            <a class="close" href="javascript:;">&nbsp;</a>
+                            <div class="title">
+                                <!-- <h2>凯美瑞 11款 200G 经典周年纪念版</h2>
+                                <h3>￥ <strong>12.95</strong> 万</h3> -->
+                                <h2></h2>
+                                <h3>￥ <strong></strong> 万</h3>
+                            </div>
+                            
+                            <div class="hot_img">
+                                <div class="swipte3" id="swipte3">
+                                    <ul class="swipte3_main" style="width:618px;">
+                                        <li>
+                                            <a data-i="0" class="img" href="javascript:;"><img src="" alt=""></a>
+                                            <a data-i="1" class="img" href="javascript:;"><img src="" alt=""></a>
+                                            <a data-i="2" class="img" href="javascript:;"><img src="" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a data-i="3" class="img" href="javascript:;"><img src="" alt=""></a>
+                                            <a data-i="4" class="img" href="javascript:;"><img src="" alt=""></a>
+                                            <a data-i="5" class="img" href="javascript:;"><img src="" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pointcon1">
+                                <ul id='mypoint1' class="point1 clearfix">
+                                  <li class='on1'></li>
+                                  <li></li>
+                                </ul>
+                            </div>
+
+                            <div class="title_nav">
+                                <!-- <var class="t_var1">LVGBE40K9*********</var>
+                                <var class="t_var2">京QT5****</var>
+                                <var class="t_var3">5242</var> -->
+                                <var class="t_var1"></var>
+                                <var class="t_var2"></var>
+                                <var class="t_var3"></var>
+                            </div>
+                            
+                            <div class="result_content">
+                                <!-- <strong class="strong1">丰田</strong>
+                                <strong class="strong2">国产</strong><br>
+                                <strong class="strong3">凯美瑞</strong>
+                                <strong class="strong4">240G</strong><br>
+                                <strong class="strong5">2.4L</strong>
+                                <strong class="strong6">自动</strong><br>
+                                <strong class="strong7">7.60万公里</strong>
+                                <strong class="strong8">2009年07月</strong><br>
+                                <strong class="strong9">5年3个月</strong>
+                                <strong class="strong10">北京</strong><br>
+                                <strong class="strong11">国4</strong>
+                                <strong class="strong12">优</strong> -->
+                                <strong class="strong1"></strong>
+                                <strong class="strong2"></strong><br>
+                                <strong class="strong3"></strong>
+                                <strong class="strong4"></strong><br>
+                                <strong class="strong5"></strong>
+                                <strong class="strong6"></strong><br>
+                                <strong class="strong7"></strong>
+                                <strong class="strong8"></strong><br>
+                                <strong class="strong9"></strong>
+                                <strong class="strong10"></strong><br>
+                                <strong class="strong11"></strong>
+                                <strong class="strong12"></strong>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 大图片显示 -->
+                    
+                    <div class="bag_bg" style="">
+                        <!-- <img src="images/big_img.jpg" alt=""> -->
+                        <img src="" alt="">
+                    </div>
+
+                    <a class="tel telp" href="javascript:;"></a>
+                </li>
+                <li class="index3">
+                    <div id="nav3" class="nav">
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                    </div>
+                    <div class="form2">
+                        <select id="sele3" onchange="p_change2();">
+                            <option value="">请选择品牌</option>
+                        </select>
+                        <select id="sele4" onchange="c_change2();">
+                            <option value="">请选择车系</option>
+                        </select><br/>
+                        <select id="sele5">
+                            <option value="">请选择车款</option>
+                        </select>
+                        <select name="" id="car_ages">
+                            <option value="">请选择车龄</option>
+                            <option value="0">不限制</option>
+                            <option value="1">1年以内</option>
+                            <option value="2">2年以内</option>
+                            <option value="3">3年以内</option>
+                            <option value="4">3-5年</option>
+                            <option value="5">5-8年</option>
+                            <option value="6">8年以上</option>
+                        </select>
+                        <select name="" id="budget">
+                            <option value="">请选择预算</option>
+                            <option value="0">不限制</option>
+                            <option value="1">5万以下</option>
+                            <option value="2">5-8万</option>
+                            <option value="3">8-10万</option>
+                            <option value="4">10-15万</option>
+                            <option value="5">15-20万</option>
+                            <option value="6">20-30万</option>
+                            <option value="7">30-50万</option>
+                            <option value="8">50万以上</option>
+                        </select>
+                        <div class="name_sex">
+                            <input class="name_input" id="name" type="text" placeholder="请填写您的姓名">
+                            <p>
+                                <label class="sex_input"><input type="radio" name="sex" value="1">男</label>
+                                <label class="sex_input"><input type="radio" name="sex" value="2">女</label>
+                            </p>
+                        </div>
+                        <input class="tel_input" id="mobile" type="tel" placeholder="请填写您的手机号">
+                    </div>
+                    <a class="made2" href="javascript:checkInfo();"></a>
+                    <img src="images/y3_bg.jpg" alt="优车诚品">
+                    <a class="tel telp" href="javascript:;"></a>
+                </li>
+                <li class="index4">
+                    <div id="nav4" class="nav">
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                        <a href="javascript:;">&nbsp;</a>
+                    </div>
+                    <img src="images/y4_bg.jpg" alt="优车诚品">
+                    <a class="tel telp" href="javascript:;"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="js/common.js"></script>
+</html>

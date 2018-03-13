@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta charset="utf-8">
+		<title>自然之宝</title>
+		<link rel="stylesheet" type="text/css" href="base.css"/>
+		<style type="text/css">
+			
+img{width: 320px;}
+		</style>
+	
+	</head>
+	<body onload="resetPage();jump()">
+	<img src="img/bg_page6.jpg" />
+	
+	</body>
+	<script type="text/javascript" src="common.js"></script>
+		<script type="text/javascript">	
+		var x=getQueryString('x')
+		var u=getQueryString('userinfo')
+  	function jump(){		//////////
+setTimeout(function(){
+location='jiangpin3.html?s='+x+'&u='+u;
+},3000);
+}
+////////////////////
+		
+		</script>
+</html>
