@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--[if lt IE 9]>
+    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+		<script type="text/javascript" src="js/respond.min.js" ></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+    <link rel="stylesheet" href="css/animate.min.css" />
+	<title>分销统计</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style_iframe.css" />
+</head>
+<body>
+	
+	<div class="order-body6">
+		<div class="modificationaddress_con">
+			<p><span>修改地址</span></p>
+			
+			<table cellspacing="0" cellpadding="0" id="table">
+			 <tr style="background: #f9f9f9;height:35px; line-height:35px;">
+			    <th>收货人</th>
+			    <th style="width:30%">地址</th>
+			    <th>邮编</th>
+			    <th>电话手机</th>
+			    <th>操作</th>
+
+			  </tr>
+			  <tr>
+			    <td>
+			    	<img src="img/24_img/35_img1.jpg" alt="" style="display:none;">
+			    	<span>陈伊文</span>
+			    </td>
+			    <td>广东省 深圳市 南山市粤海街道科苑路13号金科技大厦A座6层元元元元科技公司</td>
+			    <td><span>518057</span></td>
+			    <td><span>13523695568</span></td>
+			    <td><input type="button" value="修改" class="xiugai"><span>|</span><input type="button" value="删除"></td>
+			     <td><input type="button" value="默认地址" style="width:100px;"></td>
+			  </tr>
+			  <tr>
+			     <td>
+			    	<img src="img/24_img/35_img1.jpg" alt="" style="display:none;">
+			    	<span>陈伊文</span>
+			    </td>
+			    <td>广东省 深圳市 南山市粤海街道科苑路13号金科技大厦A座6层元元元元科技公司</td>
+			    <td><span>518057</span></td>
+			    <td><span>13523695568</span></td>
+			    <td><input type="button" value="修改" class="xiugai"><span>|</span><input type="button" value="删除"></td>
+			    <td><input type="button" value="设为默认" style="width:100px;"></td>
+			  </tr>
+			</table>
+			<ol><input type="button" value="添加新地址"></ol>
+
+		</div>
+		
+		
+
+	</div>
+
+
+				
+
+
+	<script>
+		$(function(){
+			//提交审核 按钮
+			$('.modificationaddress_con ol input').bind('click',function(){
+				$(window.parent.claimsApplicationPop1());
+			});
+		});
+
+		$(function(){
+			//提交审核 按钮
+			$('.modificationaddress_con table tr .xiugai').bind('click',function(){
+				$(window.parent.claimsApplicationPop5());
+			});
+		});
+
+
+	//弹出层
+		$('.modificationaddress_con ol').children('input').click(function(){
+			$('.tanchu').css('display','block');
+			$('.toumimg').css('display','block');
+		})
+		$('.close').click(function(){
+			$('.tanchu').css('display','none;');
+		})
+		</script>
+	<script>
+
+	//表格
+
+	$('#table tr').each(function(){
+		$(this).children('td').eq(1).css('width','30%')
+		$(this).children('td').eq(5).css('color','#e04547')
+		$(this).children('td').eq(1).css('textAlign','left')
+		$(this).children('td').eq(5).each(function(){
+			$(this).mouseover(function(){
+				$(this).css('border',"1px solid #e04547")
+			})
+			$(this).mouseout(function(){
+				$(this).css('border',"none")
+			})
+			
+
+		})
+		if($(this).children('td').eq(5).children('input').val()=="默认地址"){
+			$(this).children('td').children('img').css('display','bolck')
+		}else if($(this).children('td').eq(5).children('input').val()=="设为默认"){
+			$(this).children('td').children('img').css('display','none')
+		}
+
+	})
+	</script>
+</body>
+</html>

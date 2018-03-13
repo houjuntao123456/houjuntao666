@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分销网络</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+			<script type="text/javascript" src="js/respond.min.js" ></script>
+	    <![endif]-->
+	    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	    <link rel="stylesheet" href="css/animate.min.css" />
+		<title>分销统计</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style_iframe.css" />
+</head>
+<body>
+	<div class="order-body2">
+		<div class="con_fxtj1">
+			<p class="fxtj1"><span>我的分销网络</span></p>
+			<input type="button" value="添加分销网络" class="tianjia">
+			<p class="erweima">
+				<img src="img/24_img/24_erweima.jpg" alt="">
+				<span>我的分销网络二维码</span>
+
+			</p>
+
+			
+		</div>
+		<div class="con_fxtjlb1">
+			<p><span>分销统计列表</span></p>
+			<div>
+				<span>分销商等级</span>
+				<select name="" id=""><option value="">全部</option></select>
+				<span>日期</span>
+				<input type="text" value="2015-08-29">
+				<span style="padding-left:0;">至</span>
+				<input type="text" value="2015-09-29">
+				<input type="button" value="查询" class="cx">
+			</div>
+			<table cellspacing="0" cellpadding="0" id="table">
+			  <tr>
+			    <th>商户编号</th>
+			    <th>商户名称</th>
+			    <th>商户级别</th>
+			    <th>联系电话</th>
+			    <th>奖金比例</th>
+			    <th>加入时间</th>
+			    <th>操作</th>
+			  </tr>
+			  <tr>
+			    <td>123455</td>
+			    <td>xxxx</td>
+			    <td>一级</td>
+			    <td>13831968524</td>
+			    <td>￥14.5</td>
+			    <td>2015-08-18</td>
+			    <td style="xiugai">修改</td>
+			  </tr>
+			  <tr>
+			    <td>123455</td>
+			    <td>xxxx</td>
+			    <td>一级</td>
+			    <td>13831968524</td>
+			    <td>￥14.5</td>
+			    <td>2015-08-18</td>
+			    <td style="xiugai">修改</td>
+			  </tr>
+			  <tr>
+			    <td>123455</td>
+			    <td>xxxx</td>
+			    <td>一级</td>
+			    <td>13831968524</td>
+			    <td>￥14.5</td>
+			    <td>2015-08-18</td>
+			    <td style="xiugai">修改</td>
+			  </tr>
+			  <tr>
+			    <td>123455</td>
+			    <td>xxxx</td>
+			    <td>一级</td>
+			    <td>13831968524</td>
+			    <td>￥14.5</td>
+			    <td>2015-08-18</td>
+			    <td style="xiugai">修改</td>
+			  </tr>
+			</table>
+		</div>
+		<div class="con_bottom">
+			<input type="button" value="上一页" class="next">
+			<a href="">1</a>
+			<a href="">2</a>
+			<a href="">3</a>
+			<a href="">4</a>
+			<a href="">5</a>
+			<span style="margin-left:0;">…</span>
+			<input type="button" value="下一页" class="next">
+			<span>共<span>100</span>页</span>
+			<span>到第</span>
+			<input type="text" class="dijiye">
+			<span style="margin-left:0;">页</span>
+			<input type="button" value="确定" class="qd">
+		</div>
+	</div>
+			<script>
+			//表格隔行变色
+				$('#table tr').each(function(){
+				var index = $(this).index();
+				if(index%2==1){
+					$(this).css('background','#ffffff')	
+				}
+				if(index%2==0){
+					$(this).css('background','#f6f6f6');
+				}
+
+			})
+				$('#table tr').each(function(){
+					$(this).children('td').eq(6).css('color','#2b86ba').css('cursor','pointer');
+				})
+
+
+
+
+				$(function(){
+				//添加分销 按钮
+				$('.tianjia').bind('click',function(){
+					$(window.parent.claimsApplicationPop6());
+						});
+				$('#table tr td').eq(6).click(function(){
+					$(window.parent.claimsApplicationPop7());
+				})
+				});
+
+			</script>
+</body>
+</html>

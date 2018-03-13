@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改资料</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--[if lt IE 9]>
+    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+		<script type="text/javascript" src="js/respond.min.js" ></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+    <link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style_iframe.css" />
+	<link rel="stylesheet" href="css/styleshangchuan.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> 
+	<script type="text/javascript" src="js/cropbox.js"></script>
+</head>
+<body>
+	<div class="order-body4">
+		<div class="modifyingdata_con">
+			<p><span>我的资料</span></p>
+			<ul class="modifyingdata_con_tab">
+				<li><span style="color:#e04547;border-bottom:2px solid #e04547;">修改资料</span><i>|</i></li>
+				<li style="margin-left:0;border-right:0;"><span>修改头像</span></li>
+			</ul>
+			<div class="ziliao">
+				<ul>
+					<li>
+						<span>昵称：</span>
+						<input type=·"text">
+					</li>
+					<li>
+						
+						<span><span style="color:red; width:10px;">*</span>用户名：</span>
+						<b class="anniublue"></b>
+						<span style="width:10px;">男</span>
+						<b class="anniublue" style="margin-left:30px;"></b>
+						<span style="width:10px;" >女</span>
+					</li>
+	
+					<li>
+						<span>生日：</span>
+						<select size="1" id="yearSelect" name="yearSelect" onchange="selYear('yearSelect',this.value)"></select>
+						
+						<span style="width:15px;">年</span>
+						<select name="" id="">
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">6</option>
+							<option value="">7</option>
+							<option value="">8</option>
+							<option value="">9</option>
+							<option value="">10</option>
+							<option value="">11</option>
+							<option value="">12</option>
+						</select>
+						<span style="width:15px;">月</span>
+						<select name="" id="">
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">6</option>
+							<option value="">7</option>
+							<option value="">8</option>
+							<option value="">9</option>
+							<option value="">10</option>
+							<option value="">11</option>
+							<option value="">12</option>
+							<option value="">13</option>
+							<option value="">14</option>
+							<option value="">15</option>
+							<option value="">16</option>
+							<option value="">17</option>
+							<option value="">18</option>
+							<option value="">19</option>
+							<option value="">20</option>
+							<option value="">21</option>
+							<option value="">22</option>
+							<option value="">23</option>
+							<option value="">24</option>
+							<option value="">25</option>
+							<option value="">26</option>
+							<option value="">27</option>
+							<option value="">28</option>
+							<option value="">29</option>
+							<option value="">30</option>
+							<option value="">31</option>
+						</select>
+					</li>
+					<li>
+						<span>邮箱：</span>
+						<input type="text">
+					</li>
+					<li>
+						<span>身份证：</span>
+						<input type="text">
+					</li>
+					<li>
+						<span>手机号：</span>
+						<span>159112345687</span>
+					</li>
+				</ul>
+				<p class="bc"><input type="button" value="保存"></p>
+			</div>	
+			<div class="container" style="display:none;">
+				<span style="font-size:12px;">仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</span>
+				  <div class="imageBox">
+				    <div class="thumbBox"></div>
+				    <div class="spinner" style="display: none">Loading...</div>
+				  </div>
+				  <div class="action"> 
+				    <!-- <input type="file" id="file" style=" width: 200px">-->
+				    <div class="new-contentarea tc"> <a href="javascript:void(0)" class="upload-img">
+				      <label for="upload-file">上传图像</label>
+				      </a>
+				      <input type="file" class="" name="upload-file" id="upload-file" />
+				    </div>
+					 <input type="button" id="btnCrop1"  class="Btnsty_peyton" value="保存">
+				    <input type="button" id="btnCrop"  class="Btnsty_peyton" value="裁切">
+				    <input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+"  >
+				    <input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-" >
+
+				  </div>
+				 <div class="yulan">
+				 	<h1>预览效果</h1>
+					<p>你上传的图片会自动生成两种尺寸，请注意小尺寸头像是否清晰</p>
+				 </div>
+				  <div class="cropped">
+						<p class="p1"></p>
+						<h2>128*128</h2>
+						<p class="p2"></p>
+						<h2>80*80</h2>
+				  </div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+				$('.modifyingdata_con_tab li').each(function(){
+					
+					$(this).click(function(){
+						$('.modifyingdata_con_tab li').each(function(){
+							$('.modifyingdata_con_tab li').children('span').css('borderBottom','').css('color','');
+							$('.modifyingdata_con>div').css('display','none');
+
+						})
+						var index=$(this).index();
+						$(this).children('span').css('borderBottom','2px solid #e04547').css('color','#e04547');
+						$('.modifyingdata_con>div').eq(index).css('display','block');
+					})
+				})
+			
+				
+			</script>
+			<!-- 年 -->
+			<script>
+				var Lastyear
+					function selYear(obj,Cyear){
+					var len=16 //select长度
+					var selObj=document.getElementById(obj)
+					var selIndex=parseInt(len/2)-1
+					var newOpt
+					var LY=Cyear-Lastyear
+					for (i=0;i<len;i++){
+					   if (selObj.options.length!=len){
+					     newOpt=document.createElement("OPTION")
+					     newOpt.text=Cyear-selIndex+i
+					     newOpt.value=Cyear-selIndex+i
+					     selObj.options.add(newOpt,i)
+					      if (selIndex==i) {Lastyear=newOpt.value}      
+					     }
+					    else
+					    {
+					     selObj.options[i].text=parseInt(selObj.options[i].text)+LY
+					     selObj.options[i].value=parseInt(selObj.options[i].value)+LY
+					     if (selIndex==i) {Lastyear=selObj.options[i].value}           
+					    }
+					 }
+					  selObj.selectedIndex=selIndex
+					}
+			</script>
+			<script>selYear('yearSelect',2005) //初试化select</script>
+			<script type="text/javascript">
+				$(window).load(function() {
+					var options =
+					{
+						thumbBox: '.thumbBox',
+						spinner: '.spinner',
+						imgSrc: 'img/6_img/6_img_15.png'
+					}
+					var cropper = $('.imageBox').cropbox(options);
+					$('#upload-file').on('change', function(){
+						var reader = new FileReader();
+						reader.onload = function(e) {
+							options.imgSrc = e.target.result;
+							cropper = $('.imageBox').cropbox(options);
+						}
+						reader.readAsDataURL(this.files[0]);
+						this.files = [];
+					})
+					$('.cropped').css('display','block');
+					$('#btnCrop').on('click', function(){
+						var img = cropper.getDataURL();
+						$('.cropped').html('');
+						$('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:128px;margin-top:4px;border-radius:128px;box-shadow:0px 0px 12px #7E7E7E;"><p>128px*128px</p>');
+						$('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:80px;margin-top:4px;border-radius:80px;box-shadow:0px 0px 12px #7E7E7E;" ><p>80px*80px</p>');
+						
+						// $('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:180px;margin-top:4px;border-radius:180px;box-shadow:0px 0px 12px #7E7E7E;"><p>180px*180px</p>');
+					})
+					$('#btnZoomIn').on('click', function(){
+						cropper.zoomIn();
+					})
+					$('#btnZoomOut').on('click', function(){
+						cropper.zoomOut();
+					})
+				});
+			</script>
+			<script>
+				$('b.anniublue').click(function(){
+		
+					$(this).toggleClass('anniublue1');
+
+				});
+			</script>
+
+
+</body>
+</html>

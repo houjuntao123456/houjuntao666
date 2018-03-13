@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+			<script type="text/javascript" src="js/respond.min.js" ></script>
+	    <![endif]-->
+	    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	    <link rel="stylesheet" href="css/animate.min.css" />
+		<title>联通沃保</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- banner -->
+		<link type="text/css" href="css/zzsc.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/zzsc.js"></script>
+		<script type="text/javascript" src="js/star.js" ></script>
+
+</head>
+<body>
+	<div class="contenter header">
+			<div class="contenter-fuild header-top">
+				
+				<a class="logo-a">
+					<img src="img/xb_logo.png" />
+				</a>
+				<ul id="ulHeaderNav" class="ul-header-nav">
+					<li><a>首页</a></li>
+					<li class="xiasanjiao"><a>手机</a></li>
+					<li class="xiasanjiao"><a>汽车</a></li>
+					<li class="xiasanjiao"><a>意外</a></li>
+					<li class="xiasanjiao"><a>健康</a></li>
+					<li><a>服务卡</a></li>
+					<li><a>活动</a></li>
+					<li><a>媒体报道</a></li>
+					<li><a>关于我们</a></li>
+				</ul>
+				<div class="user-avatar">   <!--user-avatar-shadow-->
+					<span id="userPerson" class="user-person">  <!-- 用户头像 --></span>
+					<div class="user-ava-info" style="display: none;">
+						<div>
+							<div>账号：<span>138&nbsp;1157&nbsp;0750</span></div>
+							<div>
+								等级：
+								<label></label>
+								<label></label>
+								<label></label>
+							</div>
+						</div>
+						<ul>
+							<li><a>我的账户</a></li>	
+							<li><a>我的订单</a></li>	
+							<li><a>我的理赔</a></li>	
+							<li><a class="accounts-a">退出账户</a></li>	
+						</ul>
+					</div>
+				</div>  <!--user-person-->
+				<script>
+					$(function(){
+						//查看用户详细信息
+						$('#userPerson').bind('click',function(){
+							$(this).parent().toggleClass('user-avatar-shadow').children('div').slideToggle();
+						});
+					});
+				</script>
+				<div class="clearfix"></div>
+				
+			</div>
+			<!--  导航条  点击弹窗    -->
+			<div class="contenter header-nav-pop" style="display: none;">
+				<div id="popHeaderNav" class="contenter-fuild">
+					
+					<!-- 手机  -->
+					<div class="header-nav-telphone" style="display: none;">
+						<ul>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header-nav-02.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 汽车  -->
+					<div class="header-nav-telphone" style="display: none;">
+						<ul>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header-nav-02.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 意外  -->
+					<div class="header-nav-telphone" style="display: none;">
+						<ul>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header-nav-02.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 健康  -->
+					<div class="header-nav-telphone" style="display: none;">
+						<ul>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header-nav-02.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="img/header_nav_01.png" />
+									<span>碎屏保</span>
+									<small>¥90.00/年</small>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!--  //导航条  点击弹窗    -->
+			<script>
+				$('#ulHeaderNav > li').each(function(navId){
+					$(this).bind('mouseenter',function(){
+						if(navId > 0 && navId <= 4){
+							$('#popHeaderNav > div').hide();
+							$('#popHeaderNav > div').eq(navId - 1).show();
+							$('#popHeaderNav').parent().stop().slideDown();
+						}
+						else{
+							$('#popHeaderNav').parent().slideUp();
+						}
+					});
+					$('#popHeaderNav').parent().bind('mouseleave',function(){
+						$('#popHeaderNav').parent().slideUp();
+					});
+				});
+			</script>
+			
+		</div>
+		
+		<!--  内容     -->
+		<div class="contenter cont-all">
+			<div class="UnicomWobao">
+				<div class="UnicomWobao_banner">
+					<div>
+						<h1>wo 手机屏幕碎了？</h1>
+						<h1>保护你的屏幕！</h1>
+						<p>
+							<span>发送短信</span>
+							<a href="">wb825</a>
+							<span>至</span>
+							<a href="">1065 7660</a>
+							<a href="" style="float:right; margin-right:20px;">￥18.25包月</a>
+						</p>
+						<p style="background:none;text-align:left;font-size:12px;font-weight:bold;">支持机型</p>
+						<div class="box">
+							<div class="picbox">
+								<ul class="piclist mainlist">
+									<li><a href="" target="_blank"><img src="img/6_img/11_img5.png" /></a></li>
+									<li><a href="" target="_blank"><img src="img/6_img/11_img5.png" /></a></li>
+									<li><a href="" target="_blank"><img src="img/6_img/11_img5.png" /></a></li>
+									<li><a href="" target="_blank"><img src="img/6_img/11_img5.png" /></a></li>
+									<li><a href="" target="_blank"><img src="img/6_img/11_img5.png" /></a></li>
+						            <li><a href="" target="_blank"><img src="img/6_img/11_img5.png" /></a></li>
+									<li><a href="" target="_blank"><img src="img/6_img/11_img5.png" /></a></li>
+									<li><a href="" target="_blank"><img src="img/6_img/11_img5.png" /></a></li>
+									
+								</ul>
+						        <ul class="piclist swaplist"></ul>
+							</div>
+							<div class="og_prev"></div>
+							<div class="og_next"></div>
+						</div>
+					</div>
+				</div>
+				<div class="UnicomWobao_con">
+					<ul>
+						<li style="background:#fff;border-top:2px solid #d63f1a;border-right:1px solid #999;">产品详情<span style="display:none;">|</span> <i style="display:block">(22)</i></li>
+						<li>购买须知<span>|</span><i>(22)</i></li>
+						<li>理赔指引<span>|</span><i>(22)</i></li>
+						<li>常见问题<span>|</span><i>(22)</i></li>
+						<li>会员评价<i>(33)</i></li>
+					</ul>
+					<div class="UnicomWobao_tabcon1" style="display:block;">
+						<ul>
+							<li>
+								<p><img src="img/6_img/11_img2.png" alt=""></p>
+								<p>
+									<span>原厂品质配件</span>
+									<span>专业维修人员，专业工具</span>
+								</p>
+							</li>
+							<li>
+								<p><img src="img/6_img/11_img3.png" alt=""></p>
+								<p>
+									<span>在线购买</span>
+									<span>在线申请保修，随时掌控进度</span>
+								</p>
+							</li>
+							<li>
+								<p><img src="img/6_img/11_img4.png" alt=""></p>
+								<p>
+									<span>三个月免费质保</span>
+									<span>如无法修复，给予现金补偿</span>
+								</p>
+							</li>
+							<li>
+								<p><img src="img/6_img/11_img4.png" alt=""></p>
+								<p>
+									<span>三个月免费质保</span>
+									<span>如无法修复，给予现金补偿</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="UnicomWobao_tabcon2" style="display:none;"></div>
+					<div class="UnicomWobao_tabcon3" style="display:none;"></div>
+					<div class="UnicomWobao_tabcon4" style="display:none;"></div>
+					<div class="UnicomWobao_tabcon5" style="display:none;">
+						<ul>
+							<li>
+								<div>
+									<input type="text" value="4.0"><span style="font-size:14px;">分</span>
+									<p><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing1.png" alt=""></p>
+								</div>
+								<div class="tabcon5_div1">
+									<p><span style="font-size:14px;">服务质量：</span><img src="img/6_img/6_img_wuxiing.png" alt=><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><span>5分</span></p>
+									<p><span style="font-size:14px;">服务质量：</span><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><span>5分</span></p>
+									<p><span style="font-size:14px;">服务质量：</span><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><img src="img/6_img/6_img_wuxiing.png" alt=""><span>5分</span></p>
+
+								</div>
+
+							</li>
+							<li style="height:40px; font-size:30px;font-weight: bold; background:#f0f0f0; text-align:left; font-size:20px;text-indent:40px; line-height:40px;">消费评价 <input type="button" class="wydp" value="我要点评" ></li>
+							<li style="height:150px; border-bottom:1px solid #ccc;">
+								<div class="contab_div2" >
+									<img src="img/6_img/6_img_15.png" alt="">
+									<p><span style="font-size:14px;">木木</span><b><input type="text" value="1"><img src="img/6_img/6_img16.png" alt=""></b></p>
+								</div>
+								<div>
+									<p>
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<span>5分</span>
+										<span>2015-09-19</span>
+									</p>
+									<p>屏幕保修，理赔很好，我很喜欢</p>
+								</div>
+							</li>
+							<li style="height:150px; border-bottom:1px solid #ccc;">
+								<div class="contab_div2" >
+									<img src="img/6_img/6_img_15.png" alt="">
+									<p><span style="font-size:14px;">木木</span><b><input type="text" value="1"><img src="img/6_img/6_img16.png" alt=""></b></p>
+								</div>
+								<div>
+									<p>
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<span>5分</span>
+										<span>2015-09-19</span>
+									</p>
+									<p>屏幕保修，理赔很好，我很喜欢</p>
+								</div>
+							</li>
+							<li style="height:150px; border-bottom:1px solid #ccc;">
+								<div class="contab_div2" >
+									<img src="img/6_img/6_img_15.png" alt="">
+									<p><span style="font-size:14px;">木木</span><b><input type="text" value="1"><img src="img/6_img/6_img16.png" alt=""></b></p>
+								</div>
+								<div>
+									<p>
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<img src="img/6_img/6_img_wuxiing.png" alt="">
+										<span>5分</span>
+										<span>2015-09-19</span>
+									</p>
+									<p>屏幕保修，理赔很好，我很喜欢</p>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			<!-- 	评论弹出层 -->
+				<div class="pingluntijiaoceng">
+					<div class="pingluntijiao">
+						<p><span>点评</span><img src="img/24_img/35_img2.png" alt="" class="close1"></p>
+						<ul>
+							<li class="li1">
+								<span style="width:100px;text-align:right;">总体评价：</span>
+								<input type="button" value="差">
+								<input type="button" value="一般">
+								<input type="button" value="满意">
+								<input type="button" value="非常满意">
+								<input type="button" value="无可挑剔">
+							</li>
+							<li class="li2">
+								<span>服务质量：</span>
+								<div id="star">
+									<ul>
+										<li><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">2</a></li>
+										<li><a href="javascript:;">3</a></li>
+										<li><a href="javascript:;">4</a></li>
+										<li><a href="javascript:;">5</a></li>
+									</ul>
+								</div>
+								<input type="text" value="5"><span>分</span>
+								<span style="width:100px;text-align:right;">服务态度：</span>
+								<div id="star1" class="star">
+									<ul>
+										<li><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">2</a></li>
+										<li><a href="javascript:;">3</a></li>
+										<li><a href="javascript:;">4</a></li>
+										<li><a href="javascript:;">5</a></li>
+									</ul>
+								</div>
+								<input type="text" value="5"><span>分</span>
+								<span style="width:100px;text-align:right;">服务速度：</span>
+								<div id="star2">
+									<ul>
+										<li><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">2</a></li>
+										<li><a href="javascript:;">3</a></li>
+										<li><a href="javascript:;">4</a></li>
+										<li><a href="javascript:;">5</a></li>
+									</ul>
+								</div>
+								<input type="text" value="5"><span>分</span>
+							</li>
+							<li><span style="display:inline-block; vertical-align: top; width:90px;text-align:right;">服务评价：</span> <textarea name="" style="display:inline-block; vertical-align: top;"></textarea></li>
+							<li><input type="text" value="1/150" style="border:none;font-size:14px;margin-left:100px;"></li>
+							<li><input type="button" class="fbpl"value="发表评论" style="width:100px;height:30px;background:#d63f1a;color:#fff;border:none; float:right;margin-right:100px;"></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="contenter cont-all">
+			<div class="contenter-fuild index-content-three">
+				<div class="indexCon-three-left">
+					<div>
+						<h1 class="indexContThreeLe-h101">关于保什么</h1>
+						<ul>
+							<li><a>关于我们</a></li>
+							<li><a>用户协议</a></li>
+							<li><a>隐私保护</a></li>
+							<li><a>媒体报道</a></li>
+						</ul>
+					</div>
+					<div>
+						<h1 class="indexContThreeLe-h102">关于保什么</h1>
+						<ul>
+							<li><a>常见问题</a></li>
+							<li><a>服务流程</a></li>
+							<li><a>查找序列号和IMEI</a></li>
+							<li><a>寄送设备须知</a></li>
+							<li><a>意见反馈</a></li>
+						</ul>
+					</div>
+					<div>
+						<h1 class="indexContThreeLe-h103">关于保什么</h1>
+						<ul>
+							<li><a>理赔指南</a></li>
+							<li><a>理赔流程</a></li>
+							<li><a>理赔提交资料</a></li>
+							<li><a>理赔金都查询</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul class="indexCon-three-right">
+					<li class="indexConThreeR01">
+						<img src="img/index/index_Content_three_h1img04.png" />
+						<span>覆盖全国330城市开放10000余家安装门店；</span>
+					</li>
+					<li class="indexConThreeR02">
+						<img src="img/index/index_Content_three_h1img05.png" />
+						<span><h5>微信客服号</h5><small>baoshenme</small></span>
+					</li>
+					<li class="indexConThreeR03">
+						<h3>客服热线</h3>
+						<h1>400-628-9210</h1>
+						<small>工作日：900-18：00</small>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<div class="contenter-fuild login-footer">
+			<div>
+				友情链接：快递查询极限户外-自驾越野上海车团购上海生活服务建筑微博天津企业铁路网上订票官网汽车美容加盟
+			</div>
+			<div>
+				<span>Copyright&copy;&nbsp;&nbsp;2015&nbsp;&nbsp;Baosm.com&nbsp;&nbsp;小保科技</span>
+				<span>中国保监会网销许可证&nbsp;&nbsp;|&nbsp;&nbsp;京ICP备14003454号</span>
+			</div>
+			<div>
+				<img src="img/index/jiameng_img01.png"/>
+				<img src="img/index/jiameng_img02.png"/>
+			</div>
+		</div>
+	
+	<script>
+					$(function(){
+					//评论
+					$('.wydp').bind('click',function(){
+						$(window.parent.claimsApplicationPop2());
+					});
+				});
+					function claimsApplicationPop2(){
+					$('.pingluntijiaoceng').css('display','block');
+					//碎屏险
+					var claimsApplicationHeight3 = parseInt($('.pinnluntijiao').css('height'));
+					$('.pinnluntijiao').css('margin-top',-claimsApplicationHeight3 / 2 + 'px');
+					}
+					$('.close1').bind('click',function(){
+						$('.pingluntijiaoceng').css('display','none');
+						// $('.hongbao2_ceng').css('display','block');
+					});
+
+					// tab
+
+				$('.UnicomWobao_con>ul>li').each(function(){
+					$(this).click(function(){
+						$('.UnicomWobao_con>ul >li').each(function(){
+							$(this).children('i').css('display','none');
+							$(this).css('background','').css('borderTop','').css('color','').css('color','').css('borderLeft','').css('borderRight','');
+							$('.UnicomWobao_con>div').css('display','none');
+							// $(this).children('span').css('display','block');
+							
+
+						})
+						var index = $(this).index();
+						$(this).css('background','#fff').css('borderTop','2px solid #d63f1a').css('color','#d63f1a').css('color','#d63f1a').css('borderLeft','1px solid #999').css('borderRight','1px solid #999');
+						$(this).children('i').css('display','block');
+						$('.UnicomWobao_con').children('div').eq(index).css('display','block');
+						$(this).children('span').css('display','none');
+					})
+				})
+				</script>
+
+</body>
+</html>

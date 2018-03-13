@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+			<script type="text/javascript" src="js/respond.min.js" ></script>
+	    <![endif]-->
+	    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	    <link rel="stylesheet" href="css/animate.min.css" />
+		<title>支付成功</title>
+		<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="contenter header">
+		<div class="contenter-fuild header-top">
+			
+			<a class="logo-a">
+				<img src="img/xb_logo.png" />
+			</a>
+			<ul id="ulHeaderNav" class="ul-header-nav">
+				<li><a>首页</a></li>
+				<li class="xiasanjiao"><a>手机</a></li>
+				<li class="xiasanjiao"><a>汽车</a></li>
+				<li class="xiasanjiao"><a>意外</a></li>
+				<li class="xiasanjiao"><a>健康</a></li>
+				<li><a>服务卡</a></li>
+				<li><a>活动</a></li>
+				<li><a>媒体报道</a></li>
+				<li><a>关于我们</a></li>
+			</ul>
+			<div class="user-avatar">   <!--user-avatar-shadow-->
+				<span id="userPerson" class="user-person">  <!-- 用户头像 --></span>
+				<div class="user-ava-info" style="display: none;">
+					<div>
+						<div>账号：<span>138&nbsp;1157&nbsp;0750</span></div>
+						<div>
+							等级：
+							<label></label>
+							<label></label>
+							<label></label>
+						</div>
+					</div>
+					<ul>
+						<li><a>我的账户</a></li>	
+						<li><a>我的订单</a></li>	
+						<li><a>我的理赔</a></li>	
+						<li><a class="accounts-a">退出账户</a></li>	
+					</ul>
+				</div>
+			</div>  <!--user-person-->
+			<script>
+				$(function(){
+					//查看用户详细信息
+					$('#userPerson').bind('click',function(){
+						$(this).parent().toggleClass('user-avatar-shadow').children('div').slideToggle();
+					});
+				});
+			</script>
+			<div class="clearfix"></div>
+			
+		</div>
+		<!--  导航条  点击弹窗    -->
+		<div class="contenter header-nav-pop" style="display: none;">
+			<div id="popHeaderNav" class="contenter-fuild">
+				
+				<!-- 手机  -->
+				<div class="header-nav-telphone" style="display: none;">
+					<ul>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header-nav-02.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 汽车  -->
+				<div class="header-nav-telphone" style="display: none;">
+					<ul>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header-nav-02.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 意外  -->
+				<div class="header-nav-telphone" style="display: none;">
+					<ul>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header-nav-02.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 健康  -->
+				<div class="header-nav-telphone" style="display: none;">
+					<ul>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header-nav-02.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="img/header_nav_01.png" />
+								<span>碎屏保</span>
+								<small>¥90.00/年</small>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<!--  //导航条  点击弹窗    -->
+		<script>
+			$('#ulHeaderNav > li').each(function(navId){
+				$(this).bind('mouseenter',function(){
+					if(navId > 0 && navId <= 4){
+						$('#popHeaderNav > div').hide();
+						$('#popHeaderNav > div').eq(navId - 1).show();
+						$('#popHeaderNav').parent().stop().slideDown();
+					}
+					else{
+						$('#popHeaderNav').parent().slideUp();
+					}
+				});
+				$('#popHeaderNav').parent().bind('mouseleave',function(){
+					$('#popHeaderNav').parent().slideUp();
+				});
+			});
+		</script>
+		
+	</div>
+	
+	<!--  内容     -->
+	<div class="contenter cont-all">
+		<div class="Paymentsuccess">
+			<div class="Paymentsuccess_top">
+					<span class="span1">1填写保单</span>
+					<span class="span2">2选择支付方式</span>
+					<span class="span3">3购买成功</span>
+			</div>
+			<div class="Paymentsuccess_con">
+				<p><img src="img/6_img/6_img10.png" alt=""><span>恭喜您！服务订购完成</span></p>
+				<p style="margin-top:50px;"><input type="button" class="photoshenhe" value="提交审核照片"></p>
+			
+				<div>
+					<h6>
+						<span style="margin-left:90px; display: inline-block;">订单信息</span>
+						<span style="margin-left:120px; display: inline-block;">投保人</span>
+						<span style="margin-left:80px; display: inline-block;">投保时间</span>
+						<span style="margin-left:120px; display: inline-block;">价格</span>
+					</h6>
+					<table border="1" cellspacing="0" cellpadding="0">
+					  <tr style="height:30px; background:#f6f6f6;text-align:left;">
+					    <td colspan="5" style="padding-left:20px;">订单号：1501248752369874512</td>
+					  </tr>
+					  <tr style="height:90px;">
+					    <td>
+					    	<img src="img/6_img/6_img7.png" alt="">
+					    </td>
+					    <td>iPhone&nbsp6s</td>
+					    <td>木木</td>
+					    <td>2015-09-28至2016-09-27</td>
+					    <td>￥99元保一年</td>
+					  </tr>
+					</table>
+					<p style="margin-top:0;"><img src="img/6_img/6_img11.png" alt=""><img src="img/6_img/6_img12.png" alt=""><img src="img/6_img/6_img13.png" alt=""></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="contenter cont-all">
+		<div class="contenter-fuild index-content-three">
+			
+			<div class="indexCon-three-left">
+				<div>
+					<h1 class="indexContThreeLe-h101">关于保什么</h1>
+					<ul>
+						<li><a>关于我们</a></li>
+						<li><a>用户协议</a></li>
+						<li><a>隐私保护</a></li>
+						<li><a>媒体报道</a></li>
+					</ul>
+				</div>
+				<div>
+					<h1 class="indexContThreeLe-h102">关于保什么</h1>
+					<ul>
+						<li><a>常见问题</a></li>
+						<li><a>服务流程</a></li>
+						<li><a>查找序列号和IMEI</a></li>
+						<li><a>寄送设备须知</a></li>
+						<li><a>意见反馈</a></li>
+					</ul>
+				</div>
+				<div>
+					<h1 class="indexContThreeLe-h103">关于保什么</h1>
+					<ul>
+						<li><a>理赔指南</a></li>
+						<li><a>理赔流程</a></li>
+						<li><a>理赔提交资料</a></li>
+						<li><a>理赔金都查询</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<ul class="indexCon-three-right">
+				<li class="indexConThreeR01">
+					<img src="img/index/index_Content_three_h1img04.png" />
+					<span>覆盖全国330城市开放10000余家维修门店；</span>
+				</li>
+				<li class="indexConThreeR02">
+					<img src="img/index/index_Content_three_h1img05.png" />
+					<span><h5>微信客服号</h5><small>baoshenme</small></span>
+				</li>
+				<li class="indexConThreeR03">
+					<h3>客服热线</h3>
+					<h1>400-628-9210</h1>
+					<small>工作日：9：00-18：00</small>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="contenter-fuild login-footer">
+		<div>
+			友情链接：快递查询极限户外-自驾越野上海车团购上海生活服务建筑微博天津企业铁路网上订票官网汽车美容加盟
+		</div>
+		<div>
+			<span>Copyright&copy;&nbsp;&nbsp;2015&nbsp;&nbsp;Baosm.com&nbsp;&nbsp;小保科技</span>
+			<span>中国保监会网销许可证&nbsp;&nbsp;|&nbsp;&nbsp;京ICP备14003454号</span>
+		</div>
+		<div>
+			<img src="img/index/jiameng_img01.png"/>
+			<img src="img/index/jiameng_img02.png"/>
+		</div>
+	</div>
+	<!-- 审核照片 提交 -->
+				<div class="sqlp_tijiao_ceng">
+					<div class="sqlp_tijiao">
+						<p><span>提示</span><img src="img/24_img/35_img2.png" alt="" class="close1"></p>
+						<h1><img src="img/24_img/26_img2.png" alt=""></h1>
+						<h2>您的申请已提交，代理经纪公司会在三个工作日内审核确认！<a href="">查看交易</a></h2>
+						<h3><input type="button" value="提交"></h3>
+					</div>
+				</div>
+				<!-- 审核照片 提交失败 -->
+				<div class="sqlp_tijiao_ceng1">
+					<div class="sqlp_tijiaoshibai">
+						<p><span>提示</span><img src="img/24_img/35_img2.png" alt="" class="close1"></p>
+						<h1><img src="img/24_img/26_img2.png" alt=""></h1>
+						<h2>提交失败！</h2>
+						<h3><input type="button" value="确定"></h3>
+					</div>
+				</div>
+	<script>
+		function claimsApplicationPop2(){
+			$('.sqlp_tijiao_ceng').css('display','block');
+			//审核照片提交  弹窗遮罩 居中 26
+			var claimsApplicationHeight2 = parseInt($('.sqlp_tijiao').css('height'));
+			$('.sqlp_tijiao').css('margin-top',-claimsApplicationHeight2 / 2 + 'px');
+		}
+		$('.close1').bind('click',function(){
+			$('.sqlp_tijiao_ceng').css('display','none');
+		});
+		
+		function claimsApplicationPop3(){
+			$('.sqlp_tijiao_ceng1').css('display','none');
+			//审核照片提交失败 弹窗遮罩 居中 26 失败
+			var claimsApplicationHeight3 = parseInt($('.sqlp_tijiaoshibai').css('height'));
+			$('.sqlp_tijiaoshibai').css('margin-top',-claimsApplicationHeight3 / 2 + 'px');
+		}
+		$('.sqlp_tijiaoshibai .close1').bind('click',function(){
+			$('.sqlp_tijiao_ceng1').css('display','none');
+		});
+
+	</script>
+		<script>
+		$(function(){
+				//审核照片 按钮
+				$('.Paymentsuccess_con .photoshenhe').bind('click',function(){
+					$(window.parent.claimsApplicationPop2());
+				});
+		});
+	</script>
+	<script>
+		$(function(){
+				//审核照片 按钮 失败
+				$('.Paymentsuccess_con .photoshenhe').bind('click',function(){
+					$(window.parent.claimsApplicationPop3());
+				});
+		});
+	</script>
+</body>
+</html>

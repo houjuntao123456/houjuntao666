@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+			<script type="text/javascript" src="js/respond.min.js" ></script>
+	    <![endif]-->
+	    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	    <link rel="stylesheet" href="css/animate.min.css" />
+	    <link rel="stylesheet" href="css/font-awesome.min.css" />
+		<title>我的账户</title>
+		<link rel="stylesheet" href="./css/style_iframe.css" />
+	</head>
+	<body>
+		<div class="iframe-contenter">
+			
+			<div class="account-header myaccount-header">
+				<h1>我的账户</h1>
+				<ul>
+					<li>
+						<label>账户余额</label>
+						<span class="zh-ye">¥&nbsp;1000.50</span>
+					</li>
+					<li>
+						<label>可提现余额</label>
+						<span class="tx-ye">¥&nbsp;99</span>
+					</li>
+					<li>
+						<label>冻结金额</label>
+						<span class="dj-ye">¥&nbsp;99</span>
+					</li>
+					<li class="tx-li-btn">
+						<input type="button" name="" id="" value="提现" />
+					</li>
+				</ul>
+			</div>
+			
+			<div class="myAccount-cont">
+				<h1>账单明细</h1>
+				<ul class="order-list-nav">
+					<li><a class="order-list-nav-active">2015</a></li>
+					<li><a>2016</a></li>
+				</ul>
+				<script>
+					$(function(){
+						$('.order-list-nav > li > a').bind('click',function(){
+							$('.order-list-nav > li > a').removeClass('order-list-nav-active');
+							$(this).addClass('order-list-nav-active');
+						});
+					});
+				</script>
+				
+				<ul class="ul-mingxi-list">
+					
+					<li class="fa fa-circle">
+						<span class="mingxi-list-before">
+							<h3>11 <small>2015.05</small></h3>
+						</span>
+						<span class="mingxi-list-title">购买碎屏保</span>
+						<span class="mingxi-list-youhui red">-&nbsp;¥99</span>
+						<span class="mingxi-list-mouch">¥100</span>
+						<span class="mingxi_list-cz"><a>购买</a></span>
+						
+						<div class="clearfix"></div>
+					</li>
+					
+					<li class="fa fa-circle">
+						<span class="mingxi-list-before">
+							<h3>08 <small>2015.05</small></h3>
+						</span>
+						<span class="mingxi-list-title">账户充值</span>
+						<span class="mingxi-list-youhui green">¥99</span>
+						<span class="mingxi-list-mouch">¥100</span>
+						<span class="mingxi_list-cz"><a>购买</a></span>
+						
+						<div class="clearfix"></div>
+					</li>
+					
+					<li class="fa fa-circle">
+						<span class="mingxi-list-before">
+							<h3>05 <small>2015.05</small></h3>
+						</span>
+						<span class="mingxi-list-title">账户体现</span>
+						<span class="mingxi-list-youhui yellow">-&nbsp;¥99</span>
+						<span class="mingxi-list-mouch">¥100</span>
+						<span class="mingxi_list-cz"><a>购买</a></span>
+						
+						<div class="clearfix"></div>
+					</li>
+					
+					<li class="fa fa-circle">
+						<span class="mingxi-list-before">
+							<h3>30 <small>2015.05</small></h3>
+						</span>
+						<span class="mingxi-list-title">账户转账</span>
+						<span class="mingxi-list-youhui yellow">-&nbsp;¥99</span>
+						<span class="mingxi-list-mouch">¥100</span>
+						<span class="mingxi_list-cz"><a>购买</a></span>
+						
+						<div class="clearfix"></div>
+					</li>
+					
+					<li class="fa fa-circle">
+						<span class="mingxi-list-before">
+							<h3>24 <small>2015.05</small></h3>
+						</span>
+						<span class="mingxi-list-title">获得奖金</span>
+						<span class="mingxi-list-youhui purple">¥99</span>
+						<span class="mingxi-list-mouch">¥100</span>
+						<span class="mingxi_list-cz"><a>购买</a></span>
+						
+						<div class="clearfix"></div>
+					</li>
+					
+				</ul>
+				
+				<div class="myAccount-pages">
+					<ul>
+						<li>上一页</li>
+						<li class="liactive">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						...
+						<li>下一页</li>
+					</ul>
+					<script>
+						$(function(){
+							//翻页按钮样式变换
+							$('.myAccount-pages > ul > li').bind('click',function(){
+								var myAccountPageLiLength = $('.myAccount-pages > ul > li').length;
+								var xbLidex = $(this).index();
+								if(xbLidex > 0 && xbLidex < myAccountPageLiLength - 1){
+									$('.myAccount-pages > ul > li').removeClass('liactive');
+									$(this).addClass('liactive');
+								}else{
+									$('.myAccount-pages > ul > li').removeClass('liactive');
+								}
+							});
+						});
+					</script>
+					
+					<span>共<label>100</label>页</span>
+					<span>到第 <input type="text" name="" id="" value="10" /> 页</span>
+					<input type="button" name="" id="" value="确定" />
+				</div>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>

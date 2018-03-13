@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+			<script type="text/javascript" src="js/respond.min.js" ></script>
+	    <![endif]-->
+	    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	    <link rel="stylesheet" href="css/animate.min.css" />
+		<title>理赔查询</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style_iframe.css" />
+	</head>
+	<body>
+		<div class="order-body">
+			
+			<div class="order-header claimsInquiry-title-list">
+				<ul>
+					<li class="fa fa-angle-right"><a>我的理赔</a></li>
+					<li>理赔查询</li>
+				</ul>
+			</div>
+			<ul class="order-list-nav">
+				<li><a class="order-list-nav-active">未付款</a></li>
+				<li><a>待审核</a></li>
+				<li><a>已投保</a></li>
+				<li><a>退款</a></li>
+			</ul>
+				<script>
+				$(function(){
+					$('.order-list-nav > li > a').bind('click',function(){
+						$('.order-list-nav > li > a').removeClass('order-list-nav-active');
+						$(this).addClass('order-list-nav-active');
+					});
+				});
+			</script>
+			
+			<!-- Table Contaners -->
+			<div class="order-table-main claimsInquiry-main">
+				
+				<table>
+					<thead>
+						<th width="30%" height="40px">订单信息</th>
+						<th colspan="2" width="20%">申请人</th>
+						<th width="30%">申请时间</th>
+						<th width="10%">理赔状态</th>
+						<th width="10%">操作</th>
+					</thead>
+				</table>
+				
+				<table class="order-table-cont">
+					<thead>
+						<tr class="tbody-title">
+							<td height="40px" colspan="7"><label>2015-07-11&nbsp;13:53:29</label><span>订单号：150924115252226520623</span></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td width="30%" height="90px"><img src="img/memberCenter_iframe/order_table_img.png"/>乳腺癌险</td>
+							<td width="10%" >小米 <img class="eyes1" src="img/6_img/xiangxixinxi.png" alt="">
+								<div class="eyesmessage1" style="">
+									<p>机型：<span>iPhone 6s</span></p>
+									<p>颜色：<span>粉色</span></p>
+									<p>产品序列号：<span>xxxxxxx</span></p>
+								</div>
+							</td>
+							
+							<td width="10%">木木 <img class="eyes2" src="img/6_img/xiangxixinxi.png" alt="">
+								<div class="eyesmessage2">
+									<p>用户名：<span>木木</span></p>
+									<p>手机号：<span>130454552336</span></p>
+								</div>
+							</td>
+							<td width="30%">
+								2015-09-28<br />
+								13:53:29
+							</td>
+							<td width="10%"> <span class="verify">待审核</span> </td>
+							<td width="10%">
+								<a>查看</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="order-table-cont">
+					<thead>
+						<tr class="tbody-title">
+							<td height="40px" colspan="7"><label>2015-07-11&nbsp;13:53:29</label><span>订单号：150924115252226520623</span></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="">
+							<td width="30%" height="90px"><img src="img/memberCenter_iframe/order_table_img2.png"/>碎屏保</td>
+							<td width="10%" >小米 <img class="eyes1" src="img/6_img/xiangxixinxi.png" alt="">
+								<div class="eyesmessage1" style="">
+									<p>机型：<span>iPhone 6s</span></p>
+									<p>颜色：<span>粉色</span></p>
+									<p>产品序列号：<span>xxxxxxx</span></p>
+								</div>
+							</td>
+							
+							<td width="10%">木木 <img class="eyes2" src="img/6_img/xiangxixinxi.png" alt="">
+								<div class="eyesmessage2">
+									<p>用户名：<span>木木</span></p>
+									<p>手机号：<span>130454552336</span></p>
+								</div>
+							</td>
+							
+							<td width="30%">
+								2015-09-28<br />
+								13:53:29
+							</td>
+							<td width="10%"> <span class="verify">待审核</span> </td>
+							<td width="10%">
+								<a>查看</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="order-table-cont">
+					<thead>
+						<tr class="tbody-title">
+							<td height="40px" colspan="7"><label>2015-07-11&nbsp;13:53:29</label><span>订单号：150924115252226520623</span></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td width="30%" height="90px"><img src="img/memberCenter_iframe/order_table_img2.png"/>碎屏保</td>
+							<td width="10%" >小米 <img class="eyes1" src="img/6_img/xiangxixinxi.png" alt="">
+								<div class="eyesmessage1" style="">
+									<p>机型：<span>iPhone 6s</span></p>
+									<p>颜色：<span>粉色</span></p>
+									<p>产品序列号：<span>xxxxxxx</span></p>
+								</div>
+							</td>
+							
+							<td width="10%">木木 <img class="eyes2" src="img/6_img/xiangxixinxi.png" alt="">
+								<div class="eyesmessage2">
+									<p>用户名：<span>木木</span></p>
+									<p>手机号：<span>130454552336</span></p>
+								</div>
+							</td>
+							<td width="30%">
+								2015-09-28<br />
+								13:53:29
+							</td>
+							<td width="10%"> <span class="pending">待处理</span> </td>
+							<td width="10%">
+								<a>查看</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				
+				<table class="order-table-cont">
+					<thead>
+						<tr class="tbody-title">
+							<td height="40px" colspan="7"><label>2015-07-11&nbsp;13:53:29</label><span>订单号：150924115252226520623</span></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td width="30%" height="90px"><img src="img/memberCenter_iframe/order_table_img2.png"/>碎屏保</td>
+							<td width="10%" >小米 <img class="eyes1" src="img/6_img/xiangxixinxi.png" alt="">
+								<div class="eyesmessage1" style="">
+									<p>机型：<span>iPhone 6s</span></p>
+									<p>颜色：<span>粉色</span></p>
+									<p>产品序列号：<span>xxxxxxx</span></p>
+								</div>
+							</td>
+							
+							<td width="10%">木木 <img class="eyes2" src="img/6_img/xiangxixinxi.png" alt="">
+								<div class="eyesmessage2">
+									<p>用户名：<span>木木</span></p>
+									<p>手机号：<span>130454552336</span></p>
+								</div>
+							</td>
+							<td width="30%">
+								2015-09-28<br />
+								13:53:29
+							</td>
+							<td width="10%"> <span class="completed">已完成</span> </td>
+							<td width="10%">
+								<a>查看</a>
+								<a>评价</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				
+			</div>
+			
+		</div>
+		<script>
+		
+				$('.eyes1').css({'width':'20px','height':'20px','float':'right','position':'relative'});
+				$('.eyes2').css({'width':'20px','height':'20px','float':'right','position':'relative'});
+				// $('.eyesmessage1').css({'position':'absolute','left':'-100px','top':'0px'})
+				$('.order-table-cont tr td .eyes1').mouseover(function(){
+					var index=$(this).index();
+					$(this).next('div').css('display','block');
+				})
+				$('.eyes1').mouseout(function(){
+					$(this).next('div').css('display','none');
+				})
+				$('.eyes2').mouseover(function(){
+					console.log($('.eye2'))
+					$(this).next('div').css('display','block');
+				})
+				$('.eyes2').mouseout(function(){
+					console.log($('.eye2'))
+					$(this).next('div').css('display','none');
+				})
+
+		</script> 
+	</body>
+</html>

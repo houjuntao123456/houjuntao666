@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的服务卡</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--[if lt IE 9]>
+    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+		<script type="text/javascript" src="js/respond.min.js" ></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+    <link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style_iframe.css" />
+</head>
+<body>
+		<div class="order-body11">
+		<div class="Myvoucher_con">
+			<p><span>我的服务卡</span></p>
+			<ul>
+				<li><span style="color:#e04547; border-bottom:2px solid #e04547;">全部</span><i>|</i></li>
+				<li><span>未使用</span><i>|</i></li>
+				<li><span>已使用</span><i>|</i></li>
+				<li><span style="border-right:none;">已过期</span></li>
+			</ul>
+			<div class="Myvoucher_tabcon">
+				<div class="tabcon1">
+					<ul>
+						<li class="li1"><span>￥100</span></li>
+						<li class="li2">
+							<h1>家政服务专用</h1>
+							<p>16位密码：12345678901234556</p>
+							<p>满200可用，限手机客户端、家政服务类专用</p>
+						</li>
+					</ul>
+				<h6><span>还有50天过期</span><span>有效期至：<span style="width:80px;">2015-11-30</span></span></h6>
+				</div>
+				<div class="tabcon2">
+					<ul>
+						<li class="li1"><span>￥100</span></li>
+						<li class="li2">
+							<h1>家政服务专用</h1>
+							<p>16位密码：12345678901234556</p>
+							<p style="color:#3bc090;">满200可用，限手机客户端、家政服务类专用</p>
+						</li>
+					</ul>
+				<h6><span>还有50天过期</span><span>有效期至：<span style="width:80px;">2015-11-30</span></span></h6>
+				</div>
+				<div class="tabcon3">
+					<ul>
+						<li class="li1"><span>￥100</span></li>
+						<li class="li2">
+							<h1>家政服务专用</h1>
+							<p>16位密码：12345678901234556</p>
+							<p style="color:#3bc090;">满200可用，限手机客户端、家政服务类专用</p>
+						</li>
+					</ul>
+				<h6><span>还有50天过期</span><span>有效期至：<span style="width:80px;">2015-11-30</span></span></h6>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	$('.Myvoucher_con>ul>li').each(function(){
+		$(this).click(function(){
+			$('.Myvoucher_con>ul>li').each(function(){
+				$('.Myvoucher_con>ul>li').children('span').css('color','').css('borderBottom','');
+				$('.Myvoucher_con>ul>li').children('span').css('borderBottom','')
+			})
+			$(this).children('span').css('color','#e04547');
+			$(this).children('span').css('borderBottom','2px solid #e04547')
+		})
+	})
+	$('.Myvoucher_con>ul>li').eq(0).click(function(){
+		$('.Myvoucher_con div').css('display','block');
+		
+	})
+	$('.Myvoucher_con>ul>li').eq(1).click(function(){
+		$('.Myvoucher_con .tabcon1').css('display','block');
+		$('.Myvoucher_con .tabcon2').css('display','none');
+		$('.Myvoucher_con .tabcon3').css('display','none');
+		
+	})
+	$('.Myvoucher_con>ul>li').eq(2).click(function(){
+		$('.Myvoucher_con .tabcon1').css('display','none');
+		$('.Myvoucher_con .tabcon2').css('display','block');
+		$('.Myvoucher_con .tabcon3').css('display','none');
+		
+	})
+	$('.Myvoucher_con>ul>li').eq(3).click(function(){
+		$('.Myvoucher_con .tabcon1').css('display','none');
+		$('.Myvoucher_con .tabcon2').css('display','none');
+		$('.Myvoucher_con .tabcon3').css('display','block');
+		
+	})
+	</script>
+</body>
+</html>

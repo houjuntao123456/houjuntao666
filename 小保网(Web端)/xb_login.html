@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+			<script type="text/javascript" src="js/respond.min.js" ></script>
+	    <![endif]-->
+	    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<title>登录</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="contenter header">
+			<div class="contenter-fuild header-top">
+				<a class="logo-a">
+					<img src="img/xb_logo.png" />
+				</a>
+			</div>
+		</div>
+		<div class="contenter cont-all">
+			<div class="contenter-fuild login-padding">
+				
+				<div class="login-content body-gay">
+					<div>
+						<img src="img/login/login_banImg.png"/>
+					</div>
+					<div>
+						<div class="login-form-padding">
+						<div class="login_tab">
+									<ul>
+										<li style=" background:#fff; border-right:1px solid #999;">会员登录</li>
+										<li style="background:-webkit-linear-gradient(#f7f5f4, #ebe7e6);border-bottom:1px solid #999;border-left:none;">商户登录</li>
+									</ul>
+								</div>
+							<div class="login-form-white">
+								
+								
+								<form action="" method="post"  style="display:block;">
+									<ul class="form-list-ul">
+										<li>
+											<input type="text" name="" class="username-input phonenum" id="" maxlength="16" value="" placeholder="请输入手机号" />
+											<span class="user-span"></span>
+											<label class="user-label"></label>
+										</li>
+										<script>
+										
+										</script>
+										<li>
+											<input type="password" name="" class="password-input mima" id="" maxlength="16" value="" placeholder="请输入密码"/>
+											<span class="pass-span"></span>
+											<label class="pass-label"></label>
+										</li>
+										<li style="overflow:hidden;line-height:40px;">
+											<input style=" float:left;"type="text" name="" class="yzCode-input yanzhengma" id="" maxlength="4" value=""placeholder="请输入验证码" />
+											<span class="yzCode-span" style=" float:left;"></span>
+											<span style="width:100px;height:35px;border:1px solid #ccc;float:left; margin-left:30px; cursor:pointer"></span>
+										</li>
+										<script>
+											function Check(){
+											var Username = document.all("phonenum").value;
+											var email = document.all("mima").value;
+											var addr = document.all("yanzhengma").value;
+											// var Sex =  obToStr(document.all("Sex"));
+											// var love = obToStr(document.all("love"));
+											if(Username==""||Username==null){
+											alert("用户名不能为空");
+											document.all("phonenum").select();
+											return false;
+											}
+											if(email==""||email==null){
+											alert("邮箱不能为空");
+											document.all("mima").select();
+											return false;
+											}
+											if(addr==""||addr==null){
+											alert("所在地不能为空");
+											document.all("yanzhengma").select();
+											return false;
+											}
+										}
+										</script>
+										<li>
+											<div>
+												<input type="checkbox" name="" id="" value="" />
+												<label>记住用户名dd</label>
+											</div>
+											<a>忘记密码</a>
+										</li>
+									</ul>
+									<input type="submit" name="" class="login-submit" id="" value="登录" />
+									<!-- <div class="qt-login noselect">
+										<a><img src="img/login/sina_login.png"/></a>
+										<a><img src="img/login/qq_login.png"/></a>
+										<a><img src="img/login/wx_login.png"/></a>
+									</div> -->
+									<a class="nopass-login">免费注册&nbsp;&nbsp;></a>
+								</form>
+								<form action="" method="post" style="display:none;">
+									<ul class="form-list-ul">
+										<li>
+											<input type="text" name="" class="username-input" id="" maxlength="16" value="" />
+											<span class="user-span"></span>
+											<label class="user-label"></label>
+										</li>
+										<li>
+											<input type="password" name="" class="password-input" id="" maxlength="16" value="" />
+											<span class="pass-span"></span>
+											<label class="pass-label"></label>
+										</li>
+										<li style="overflow:hidden;line-height:40px;">
+											<input style=" float:left;"type="text" name="" class="yzCode-input" id="" maxlength="4" value="" />
+											<span class="yzCode-span" style=" float:left;"></span>
+											<span style="width:100px;height:35px;border:1px solid #ccc;float:left; margin-left:30px;  cursor:pointer"></span>
+										</li>
+										<li>
+											<div>
+												<input type="checkbox" name="" id="" value="" />
+												<label>记住用户名</label>
+											</div>
+											<a>忘记密码</a>
+										</li>
+									</ul>
+									<input type="submit" name="" class="login-submit" onclick="Check(); " id="" value="登录" />
+								
+									<a class="nopass-login">申请加盟&nbsp;&nbsp;></a>
+								</form>
+							</div>
+							<script>
+								$('.login_tab>ul>li').each(function(){
+									$(this).click(function(){
+										$('.login_tab>ul>li').each(function(){
+											$(this).css('background','-webkit-linear-gradient(#f7f5f4, #ebe7e6)').css('border','1px solid #999').css('borderTop','none')
+											$('.login-form-white form').css('display','none');
+										})
+										var index=$(this).index();
+										$(this).css("background","").css('border','none');
+										$('.login-form-white form').eq(index).css('display','block');
+
+									})
+								})
+							</script>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="contenter-fuild login-footer">
+			<span>Copyright&copy;&nbsp;&nbsp;2015&nbsp;&nbsp;Baosm.com&nbsp;&nbsp;小保科技</span>
+			<span>中国保监会网销许可证&nbsp;&nbsp;|&nbsp;&nbsp;京ICP备14003454号</span>
+		</div>
+	</body>
+</html>

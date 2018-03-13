@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+			<script type="text/javascript" src="js/respond.min.js" ></script>
+	    <![endif]-->
+	    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	    <link rel="stylesheet" href="css/animate.min.css" />
+		<title>理赔申请</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style_iframe.css" />
+	</head>
+	<body>
+		<div class="order-body">
+			
+			<div class="order-header claimsInquiry-title-list">
+				<ul>
+					<li class="fa fa-angle-right"><a>我的理赔</a></li>
+					<li class="fa fa-angle-right"><a>理赔申请</a></li>
+					<li>申请理赔</li>
+				</ul>
+			</div>
+			<!-- Table Contaners -->
+			<div class="order-table-main claimsInquiry-main">
+				
+				<ul class="ul-claimsApplication-list">
+					<div>保修人信息</div>
+					<li>
+						<label class="input-title" for="username">姓名：</label>
+						<input type="text" name="" id="username" value="" placeholder="请填写投保人真实姓名" />
+					</li>
+					<li>
+						<label class="input-title" for="IDcard">身份证号：</label>
+						<input type="tel" name="" id="IDcard" value="" placeholder="请填写身份证号码" />
+					</li>
+					<li>
+						<label class="input-title" for="telphone">手机号：</label>
+						<input type="tel" name="" id="telphone" value="" placeholder="请填写投保人手机号" />
+					</li>
+				</ul>
+				
+				<ul class="ul-claimsApplication-list">
+					<div>收货地址</div>
+					<li>
+						<label class="input-title"></label>
+						<label class="fa fa-plus" for="receiving"></label>
+						<!-- <input type="file" name="" id="receiving" value="" style="display: none;" /> -->
+					</li>
+				</ul>
+				
+				<ul class="ul-claimsApplication-list">
+					<div>损坏原因</div>
+					<li>
+						<label class="input-title">屏幕状况：</label>
+						<input type="radio" name="pmzk" id="" value="" checked="checked" />可正常显示
+						<input type="radio" name="pmzk" id="" value="" />可正常显示
+					</li>
+					<li>
+						<label class="input-title">碎裂情况：</label>
+						<select>
+							<option>全部碎裂</option>
+							<option>全部碎裂</option>
+							<option>全部碎裂</option>
+							<option>全部碎裂</option>
+							<option>全部碎裂</option>
+						</select>
+					</li>
+					<li>
+						<label class="input-title">损害原因：</label>
+						<select>
+							<option>意外撞击</option>
+							<option>意外撞击</option>
+							<option>意外撞击</option>
+							<option>意外撞击</option>
+							<option>意外撞击</option>
+						</select>
+					</li>
+					<li>
+						<label class="input-title">备注：</label>
+						<textarea name="" rows="" cols="" placeholder="如有其它故障或注意事项，请在此填写"></textarea>
+					</li>
+				</ul>
+				
+				<!--<ul class="ul-claimsApplication-list ul-claimsApplication-list-sc">
+					<div>上传照片</div>
+					<li>
+						<h1>手机正面照</h1>
+						<img src="img/memberCenter_iframe/bd_sh_img01.png" />
+						<label for="sc1">上传</label>
+						<input type="file" name="sc1" id="sc1" value="" style="display: none;" />
+					</li>
+					<li>
+						<h1>手机背面照</h1>
+						<img src="img/memberCenter_iframe/bd_sh_img02.png" />
+						<label for="sc2">上传</label>
+						<input type="file" name="sc2" id="sc2" value="" style="display: none;" />
+					</li>
+					<li>
+						<h1>身份证正面照片</h1>
+						<img src="img/memberCenter_iframe/bd_sh_img03.png" />
+						<label for="sc3">上传</label>
+						<input type="file" name="sc3" id="sc3" value="" style="display: none;" />
+						
+					</li>
+				</ul>
+				-->
+				<input type="submit" name="" id="claimsApplicationSubmit" class="claimsApplication-submit" value="提交审核" />
+			
+			</div>
+			
+			
+			
+		</div>
+		<script>
+		$(function(){
+			//提交审核 按钮
+			$('#claimsApplicationSubmit').bind('click',function(){
+				$(window.parent.claimsApplicationPop());
+			});
+		});
+
+		$(function(){
+			//提交审核 按钮
+			$('.ul-claimsApplication-list li .fa').bind('click',function(){
+				$(window.parent.claimsApplicationPop1());
+			});
+		});
+	</script>
+	</body>
+	
+</html>
