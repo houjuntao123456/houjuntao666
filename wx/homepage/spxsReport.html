@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <title>商品销售报告</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="../mui/css/mui.min.css">
+  <script src="../mui/js/mui.min.js"></script>
+  <style>
+    .main_div_row{
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 5px;
+}
+  </style>
+</head>
+
+<body>
+  <!--  头部-->
+  <header class="mui-bar mui-bar-nav mui-bar-nav-bg" style="background-color:rgb(247, 112, 49);">
+    <a href="javascript:history.go(-1)" class="mui-icon mui-icon-back" style="color:white;"></a>
+    <h1 class="mui-title" style="color:white;">商品销售报告</h1>
+  </header>
+  <!-- 内容 -->
+  <div class="mui-content">
+    <div class="main" id="main">
+      <p>
+        <div class="mui-row main_div_row" style="line-height: 50px;">
+          <div class="mui-col-xs-3 mui-col-sm-3">
+            <div style="border:1px solid red;width: 50px;height:50px;margin-left: 10px;"></div>
+          </div>
+          <div class="mui-col-xs-8 mui-col-sm-8 ">低价家具鞋</div>
+          <div class="mui-col-xs-1 mui-col-sm-1 ">
+            <input type="checkbox" style="margin-top: 15px;">
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- 底部导航 -->
+  <nav class="mui-bar mui-bar-tab"style="height:30px;">
+    <div class="mui-row">
+      <div class="mui-col-xs-10 mui-col-sm-10"></div>
+      <div class="mui-col-xs-2 mui-col-sm-2"style="height: 31px;color: white;background-color: rgb(247, 112, 49);;text-align:center;line-height:30px;">完成</div>
+    </div>
+  </nav>
+</body>
+<script>
+  var main = document.getElementById("main");
+  var vv = 15;
+  window.onload = function () {
+    for (i = 0; i < vv; i++) {
+      main.innerHTML = main.innerHTML + " <p>" +
+        "<div class=\"mui-row main_div_row\" style=\"line-height: 50px;\">" +
+        "<div class=\"mui-col-xs-3 mui-col-sm-3\">" +
+        "<div style=\"border:1px solid red;width: 50px;height:50px;margin-left: 10px;\"></div>" +
+        "</div>" +
+        "<div class=\"mui-col-xs-8 mui-col-sm-8 \">低价家具鞋</div>" +
+        "<div class=\"mui-col-xs-1 mui-col-sm-1 \">" +
+        "<input type=\"checkbox\" style=\"margin-top: 15px\">" +
+        "</div>" +
+        "</div>"
+    }
+  }
+</script>
+
+</html>

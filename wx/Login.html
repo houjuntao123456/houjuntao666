@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <title>帐号切换</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="./mui/css/mui.min.css">
+  <script src="./mui/js/mui.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <!-- -->
+  <div class="mui-input-row mui-title" >用户登录</div>
+  <!-- 登陆 -->
+  <form class="mui-input-group">
+    <div class="mui-input-row">
+      <label>用户名：</label>
+      <input type="text" class="mui-input-clear " placeholder="请输入用户名" id="username">
+    </div>
+    <div class="mui-input-row">
+      <label>密码：</label>
+      <input type="password" class="mui-input-password " placeholder="请输入密码"id="password">
+    </div>
+    <div class="mui-button-row"style="height: 50px;">
+      <button type="button" class="mui-btn mui-btn-primary"style="width:340px;">确认</button>
+    </div>
+  </form>
+</body>
+<script>
+
+  var input = mui("input");
+  // 离开文本框
+  input[0].onblur = function () {
+    if (!this.value || this.value.trim() == "") {
+      this.placeholder = "用户名不能为空"
+    }
+  }
+  input[1].onblur = function () {
+    if (!this.value || this.value.trim() == "") {
+      this.placeholder = "密码不能为空"
+    }
+  }
+  input[0].onfocus = function () {
+    if (!this.value || this.value.trim() == "") {
+      this.placeholder = "请输入用户名"
+    }
+  }
+  input[1].onfocus = function () {
+    if (!this.value || this.value.trim() == "") {
+      this.placeholder = "请输入密码"
+    }
+  }
+  
+</script>
+</html>
